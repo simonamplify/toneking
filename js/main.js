@@ -26,6 +26,23 @@
 	            setup_collapsible_submenus();
 	        }, 700);
 	    });
+		// Menu Search
+        $.fn.extend({
+            toggleText: function(a, b){
+                return this.text(this.text() == b ? a : b);
+            }
+        });
+        $('.menuSearchBtn').click(function(){
+            $('.menuSearch').slideToggle();
+            $('.menuSearch').toggleClass('focus');
+            $('.menuSearch.focus .dgwt-wcas-search-input').focus();
+            var ms = document.querySelector('.menuSearchBtn .material-icons');
+            if (ms.innerHTML === "search") {
+                ms.innerHTML = "close";
+            } else {
+                ms.innerHTML = "search";
+            }
+        });
 	    /* Add Tag Line */
 	    $('#main-header .et_menu_container').append('<h5 class="headerTagline">TONE YOU CAN FEEL<span class="tealFont">.</span></h5>');
 		/* Create no menu class */
