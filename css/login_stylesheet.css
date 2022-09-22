@@ -1,0 +1,35 @@
+/* ===========================
+LOGIN PAGE
+=========================== */
+.login #login h1 a {
+  background-image: url("/wp-content/uploads/2019/09/tone-king-logo-black.svg") !important;
+  background-size: contain;
+  height: 100px;
+  width: auto;
+}
+
+.login #login #loginform {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 20px;
+  border: solid 1px #dddddd;
+}
+
+.login #login #loginform .submit .button {
+  background: #66cccb;
+  border: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.login #login #loginform .submit .button:hover {
+  background: #5bb2b0;
+}
+
+.grecaptcha-badge {
+  visibility: hidden !important;
+}

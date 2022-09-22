@@ -1,0 +1,87 @@
+////////////////////////////////////////////
+// Mixins
+////////////////////////////////////////////
+@mixin ease5 {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+@mixin ease2 {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+@mixin scale {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+@mixin opacity100 {
+    zoom: 1;
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+}
+@mixin opacity80 {
+    zoom: 1;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+@mixin opacity50 {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+@mixin opacity0 {
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+@mixin boxShadow {
+	-webkit-box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.1);
+	box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.1);
+}
+@mixin twoColTxt {
+	@media only screen and (min-width: 768px) {
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+		-moz-column-gap:10px;
+		-webkit-column-gap:10px;
+		column-gap:10px;
+	}
+}
+@mixin vertCenter {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@mixin horCenter {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
