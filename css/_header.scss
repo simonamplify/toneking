@@ -102,11 +102,6 @@ header {
                                 }
                             }
                         }
-                        &.current-menu-parent {
-                            > a {
-                                color: $black;
-                            }
-                        }
                         &.current-menu-item, &.current-menu-ancestor {
                             > a {
                                 color: $teal!important;
