@@ -133,6 +133,10 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
   top: 0;
 }
 
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-parent > a {
+  color: #000000;
+}
+
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor > a {
   color: #66cccb !important;
 }
