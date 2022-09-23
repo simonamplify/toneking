@@ -226,10 +226,8 @@ header {
     }
     .menuSearch {
         display: none;
-        &.focus {
-            margin-top: 10px;
-        }
         .dgwt-wcas-search-form {
+            margin: 0 0 15px 0;
             .dgwt-wcas-search-input {
                 border-radius: 0;
                 @include ease2;

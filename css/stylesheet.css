@@ -275,8 +275,8 @@ header .menuSearch {
   display: none;
 }
 
-header .menuSearch.focus {
-  margin-top: 10px;
+header .menuSearch .dgwt-wcas-search-form {
+  margin: 0 0 15px 0;
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input {
