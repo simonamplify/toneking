@@ -32,17 +32,38 @@
                 return this.text(this.text() == b ? a : b);
             }
         });
-        $('.menuSearchBtn').click(function(){
+
+        var msb = null;
+        var msb = document.querySelectorAll('.menuSearchBtn');
+        if(msb !== null && msb !== '') {
+            for(var i = 0; i < msb.length; i++) {
+                msb[i].addEventListener('click', function(event) {
+                    $('.menuSearch').slideToggle();
+                    $('.menuSearch').toggleClass('focus');
+                    $('.menuSearch.focus .dgwt-wcas-search-input').focus();
+                    var msi = msb[i].find('.menuSearchBtn');
+                    console.log(msi);
+                    if (msi.innerHTML === "search") {
+                        msi.innerHTML = "close";
+                    } else {
+                        msi.innerHTML = "search";
+                    }
+                    event.preventDefault();
+                    return false;
+                });
+            }
+        }
+        /*$('.menuSearchBtn').click(function(){
             $('.menuSearch').slideToggle();
             $('.menuSearch').toggleClass('focus');
             $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-            var ms = $('.menuSearchBtn .material-icons');
-            if (ms.innerHTML === "search") {
-                ms.innerHTML = "close";
+            var ms = document.querySelectorAll('.menuSearchBtn .material-icons');{
+            if (ms[i].innerHTML === "search") {
+                ms[i].innerHTML = "close";
             } else {
-                ms.innerHTML = "search";
+                ms[i].innerHTML = "search";
             }
-        });
+        });*/
 	    /* Add Tag Line */
 	    $('#main-header .et_menu_container').append('<h5 class="headerTagline">TONE YOU CAN FEEL<span class="tealFont">.</span></h5>');
 		/* Create no menu class */
