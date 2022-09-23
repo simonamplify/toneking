@@ -53,6 +53,7 @@
             }
         }
         $('.et_mobile_nav_menu').click(function() {
+            console.log('test');
             $('.menuSearch').slideToggle();
             $('.menuSearch').toggleClass('focus');
             $('.menuSearch.focus .dgwt-wcas-search-input').focus();
