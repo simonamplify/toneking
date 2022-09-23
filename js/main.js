@@ -41,12 +41,10 @@
                     $('.menuSearch').slideToggle();
                     $('.menuSearch').toggleClass('focus');
                     $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-                    var msi = this.find('.menuSearchBtn');
-                    console.log(msi);
-                    if (msi.innerHTML === "search") {
-                        msi.innerHTML = "close";
+                    if (msb[i].children('.material-icons').innerHTML === "search") {
+                        msb[i].children('.material-icons').innerHTML = "close";
                     } else {
-                        msi.innerHTML = "search";
+                        msb[i].children('.material-icons').innerHTML = "search";
                     }
                     event.preventDefault();
                     return false;
