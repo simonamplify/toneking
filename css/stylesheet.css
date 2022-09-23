@@ -294,6 +294,10 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   color: #66cccb !important;
 }
 
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-item > a:hover, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-ancestor > a:hover {
+  color: #ffffff !important;
+}
+
 header .menuSearch {
   display: none;
 }

@@ -241,6 +241,9 @@ header {
                             &.current-menu-item, &.current-menu-ancestor {
                                 > a {
                                     color: $teal!important;
+                                    &:hover {
+                                        color: $white!important;
+                                    }
                                 }
                             }
                         }
