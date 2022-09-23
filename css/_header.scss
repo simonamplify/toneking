@@ -149,6 +149,7 @@ header {
                         -moz-border-radius-bottomleft: 20px;
                         border-bottom-right-radius: 20px;
                         border-bottom-left-radius: 20px;
+                        line-height: 1.4em;
                         @media (hover: none) {
                             max-height: 600px;
                             max-height: 85vh;
@@ -159,7 +160,8 @@ header {
                             text-align: left;
                             a {
                                 border: none;
-                                margin: 0 5%;
+                                padding: 6px 20px;
+                                line-height: 1.4em;
                                 width: auto;
                                 display: inline-block;
                                 position: relative;
@@ -169,7 +171,8 @@ header {
                                 -webkit-border-radius: 50px;
                                 -moz-border-radius: 50px;
                                 border-radius: 50px;
-                                &:hover, &:active, &:focus {
+                                font-weight: 700;
+                                &:hover, &:focus {
                                     background-color: $teal;
                                     opacity: 1;
                                 }
@@ -186,17 +189,25 @@ header {
                                         font-family: 'ETmodules'; 
                                         text-align: center; 
                                         speak: none; 
-                                        font-weight: normal; 
+                                        font-weight: 700; 
                                         font-variant: normal; 
                                         text-transform: none; 
                                         -webkit-font-smoothing: antialiased; 
                                         font-size: 16px; 
                                         content: '\33'; 
                                         @include vertCenter;
-                                        right: 20px;
+                                        right: 10px;
                                         line-height: 0;
                                         transform-origin: center;
                                         transition: all 0.2s ease-in-out;
+                                    }
+                                }
+                                &.menu-item-has-children {
+                                    > a {
+                                        padding: 6px 20px 6px 30px;
+                                        &:hover {
+                                            color: $white!important;
+                                        }
                                     }
                                 }
                                 ul.sub-menu {
@@ -227,12 +238,9 @@ header {
                                     display: inline-block;
                                 } 
                             }
-                            &.current-menu-item, &.current-menu-ancestor.menu-item-has-children {
+                            &.current-menu-item, &.current-menu-ancestor {
                                 > a {
                                     color: $teal!important;
-                                    &:hover {
-                                        color: $white!important;
-                                    }
                                 }
                             }
                         }

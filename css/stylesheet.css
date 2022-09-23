@@ -187,6 +187,7 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu {
   -moz-border-radius-bottomleft: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  line-height: 1.4em;
 }
 
 @media (hover: none) {
@@ -204,7 +205,8 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
 
 header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a {
   border: none;
-  margin: 0 5%;
+  padding: 6px 20px;
+  line-height: 1.4em;
   width: auto;
   display: inline-block;
   position: relative;
@@ -213,9 +215,10 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   z-index: 1;
   text-align: left;
   border-radius: 50px;
+  font-weight: 700;
 }
 
-header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:hover, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:active, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:focus {
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:hover, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:focus {
   background-color: #66cccb;
   opacity: 1;
 }
@@ -234,7 +237,7 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   font-family: 'ETmodules';
   text-align: center;
   speak: none;
-  font-weight: normal;
+  font-weight: 700;
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
@@ -244,12 +247,20 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 20px;
+  right: 10px;
   line-height: 0;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.menu-item-has-children.menu-item-has-children > a {
+  padding: 6px 20px 6px 30px;
+}
+
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.menu-item-has-children.menu-item-has-children > a:hover {
+  color: #ffffff !important;
 }
 
 header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.menu-item-has-children ul.sub-menu {
@@ -279,12 +290,8 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   display: inline-block;
 }
 
-header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-item > a, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-ancestor.menu-item-has-children > a {
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-item > a, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-ancestor > a {
   color: #66cccb !important;
-}
-
-header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-item > a:hover, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-ancestor.menu-item-has-children > a:hover {
-  color: #ffffff !important;
 }
 
 header .menuSearch {
