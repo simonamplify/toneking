@@ -33,11 +33,18 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a {
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a:hover, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a:focus {
   background-color: transparent;
   opacity: 1;
-  color: #ffffff !important;
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-children > a {
   position: relative;
+  border-radius: 50px;
+}
+
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-children > a:hover {
+  color: #66cccb !important;
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1.0;
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-children > a::after {
@@ -69,6 +76,14 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu {
   left: unset;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  -webkit-box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.1);
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item {
@@ -268,71 +283,36 @@ header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input {
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input::-webkit-input-placeholder {
-  color: #eaeaea;
+  color: #595959;
   font-style: normal;
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input:-ms-input-placeholder {
-  color: #eaeaea;
+  color: #595959;
   font-style: normal;
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input::-ms-input-placeholder {
-  color: #eaeaea;
+  color: #595959;
   font-style: normal;
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input::placeholder {
-  color: #eaeaea;
+  color: #595959;
   font-style: normal;
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input:focus {
-  border-color: #eaeaea;
+  border-color: #000000;
 }
 
-header .menuSearchBtn {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #000000;
-  color: #ffffff;
-  padding: 2px 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  border-radius: 0;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.1);
-  right: 0;
-}
-
-header .menuSearchBtn .material-icons {
-  font-size: 20px;
-  padding-right: 5px;
-}
-
-@media (hover: hover) {
-  header .menuSearchBtn:hover {
-    background: #66cccb;
-    color: #ffffff;
-    border-left: solid 1px #66cccb;
-    border-right: solid 1px #66cccb;
-    border-bottom: solid 1px #66cccb;
-  }
+#page-container #et-main-area {
+  /*.et_pb_scroll_top {
+			height: 45px;
+			background: url('/wp-content/uploads/2019/09/scroll-pick.svg');
+			border-radius: 0;
+			right: 3px;
+		}*/
 }
 
 #page-container #et-main-area #main-content .entry-content #homepageBanner .bannerBlurb p {
@@ -700,13 +680,6 @@ header .menuSearchBtn .material-icons {
 
 #page-container #et-main-area #main-content .entry-content .et_pb_contact_form input[type="email"]:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form input[type="number"]:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form input[type="password"]:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form input[type="search"]:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form input[type="text"]:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form input[type="url"]:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form select:focus, #page-container #et-main-area #main-content .entry-content .et_pb_contact_form textarea:focus {
   border: solid 1px #66cccb;
-}
-
-#page-container #et-main-area .et_pb_scroll_top {
-  height: 45px;
-  background: url("/wp-content/uploads/2019/09/scroll-pick.svg");
-  border-radius: 0;
-  right: 3px;
 }
 
 #page-container #et-main-area #main-footer {
