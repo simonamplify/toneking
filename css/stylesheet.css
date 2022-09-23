@@ -40,7 +40,6 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-chi
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-children > a:hover {
-  color: #ffffff !important;
   zoom: 1;
   filter: alpha(opacity=100);
   opacity: 1.0;
@@ -134,7 +133,7 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor > a, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-parent > a {
-  color: #66cccb;
+  color: #66cccb !important;
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.twoCol > .sub-menu {
@@ -276,6 +275,10 @@ header .menuSearch {
   display: none;
 }
 
+header .menuSearch.focus {
+  margin-top: 10px;
+}
+
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input {
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -303,7 +306,21 @@ header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input::placeholder {
 }
 
 header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input:focus {
-  border-color: #000000;
+  border-color: #66cccb;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-close {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+
+header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-close:hover svg path {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  fill: #66cccb;
 }
 
 #page-container #et-main-area {

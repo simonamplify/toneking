@@ -21,7 +21,7 @@ header {
                             > a {
                                 position: relative;
                                 &:hover {
-                                    color: $white!important;
+                                    //color: $white!important;
                                     @include opacity100();
                                 }
                                 &::after {
@@ -104,7 +104,7 @@ header {
                         }
                         &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
                             > a {
-                                color: $teal;
+                                color: $teal!important;
                             }
                         }
                         &.twoCol {
@@ -226,6 +226,9 @@ header {
     }
     .menuSearch {
         display: none;
+        &.focus {
+            margin-top: 10px;
+        }
         .dgwt-wcas-search-form {
             .dgwt-wcas-search-input {
                 border-radius: 0;
@@ -235,7 +238,19 @@ header {
                     font-style: normal;
                 }
                 &:focus {
-                    border-color: $black;
+                    border-color: $teal;
+                    box-shadow: none;
+                }
+            }
+            .dgwt-wcas-close {
+                @include opacity100();
+                &:hover {
+                    svg {
+                        path {
+                            @include ease2();
+                            fill: $teal;
+                        }
+                    }
                 }
             }
         }
