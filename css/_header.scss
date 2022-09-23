@@ -21,7 +21,7 @@ header {
                             > a {
                                 position: relative;
                                 &:hover {
-                                    color: $white!important;
+                                    color: $white;
                                     @include opacity100();
                                 }
                                 &::after {
@@ -102,9 +102,12 @@ header {
                                 }
                             }
                         }
-                        &.current-menu-item, &.current-menu-ancestor {
+                        &.current-menu-item, &.current-menu-ancestor.menu-item-has-children {
                             > a {
                                 color: $teal!important;
+                                &:hover {
+                                    color: $white!important;
+                                }
                             }
                         }
                         &.twoCol {
@@ -136,6 +139,13 @@ header {
                         padding-left: 0;
                         padding-right: 0;
                         backdrop-filter: blur(4px);
+                        @include boxShadow();
+                        -webkit-border-bottom-right-radius: 20px;
+                        -webkit-border-bottom-left-radius: 20px;
+                        -moz-border-radius-bottomright: 20px;
+                        -moz-border-radius-bottomleft: 20px;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
                         @media (hover: none) {
                             max-height: 600px;
                             max-height: 85vh;
@@ -153,6 +163,9 @@ header {
                                 @include ease2();
                                 z-index: 1;
                                 text-align: left;
+                                -webkit-border-radius: 50px;
+                                -moz-border-radius: 50px;
+                                border-radius: 50px;
                                 &:hover, &:active, &:focus {
                                     background-color: $teal;
                                     opacity: 1;
@@ -211,9 +224,12 @@ header {
                                     display: inline-block;
                                 } 
                             }
-                            &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
+                            &.current-menu-item, &.current-menu-ancestor.menu-item-has-children {
                                 > a {
-                                    color: $white!important;
+                                    color: $teal!important;
+                                    &:hover {
+                                        color: $white!important;
+                                    }
                                 }
                             }
                         }
