@@ -21,7 +21,7 @@ header {
                             > a {
                                 position: relative;
                                 &:hover {
-                                    //color: $white!important;
+                                    color: $white;
                                     @include opacity100();
                                 }
                                 &::after {
@@ -102,7 +102,7 @@ header {
                                 }
                             }
                         }
-                        &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
+                        &.current-menu-item, &.current-menu-ancestor/*, &.current-menu-parent*/ {
                             > a {
                                 color: $teal!important;
                             }
@@ -146,8 +146,7 @@ header {
                             text-align: left;
                             a {
                                 border: none;
-                                padding: 0;
-                                margin: 10px 5%;
+                                margin: 0 5%;
                                 width: auto;
                                 display: inline-block;
                                 position: relative;
@@ -155,7 +154,7 @@ header {
                                 z-index: 1;
                                 text-align: left;
                                 &:hover, &:active, &:focus {
-                                    background-color: transparent;
+                                    background-color: $teal;
                                     opacity: 1;
                                 }
                             }
@@ -177,9 +176,8 @@ header {
                                         -webkit-font-smoothing: antialiased; 
                                         font-size: 16px; 
                                         content: '\33'; 
-                                        @include vertCenter; 
-                                        top: calc(50% - 3px) !important;
-                                        right: -25px;
+                                        @include vertCenter;
+                                        right: 20px;
                                         line-height: 0;
                                         transform-origin: center;
                                         transition: all 0.2s ease-in-out;
@@ -227,7 +225,7 @@ header {
     .menuSearch {
         display: none;
         .dgwt-wcas-search-form {
-            margin: 0 0 15px 0;
+            margin: 0 0 10px 0;
             .dgwt-wcas-search-input {
                 border-radius: 0;
                 @include ease2;
