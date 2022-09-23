@@ -247,9 +247,9 @@ header {
                                 }
                             }
                             &.account {
-                                display: flex;
-                                align-items: center;
                                 > a {
+                                    display: flex;
+                                    align-items: center;
                                     color: $black!important;
                                     &:hover {
                                         color: $teal!important;
@@ -299,6 +299,10 @@ header {
             }
         &.mobile {
             display: none;
+            @include vertCenter();
+            right: 0;
+            color: $teal;
+            cursor: pointer;
             @media (max-width: 980px) {
                 display: block;
             }

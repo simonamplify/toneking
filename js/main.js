@@ -36,7 +36,7 @@
             $('.menuSearch').slideToggle();
             $('.menuSearch').toggleClass('focus');
             $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-            var ms = document.querySelector('.menuSearchBtn .material-icons');
+            var ms = $('.menuSearchBtn .material-icons');
             if (ms.innerHTML === "search") {
                 ms.innerHTML = "close";
             } else {

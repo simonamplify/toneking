@@ -298,16 +298,13 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   color: #ffffff !important;
 }
 
-header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.account {
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.account > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.account > a {
   color: #000000 !important;
 }
 
@@ -380,6 +377,13 @@ header .menuSearchBtn {
 
 header .menuSearchBtn.mobile {
   display: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  color: #66cccb;
+  cursor: pointer;
 }
 
 @media (max-width: 980px) {
