@@ -377,13 +377,15 @@ header .menuSearchBtn {
 
 header .menuSearchBtn.mobile {
   display: none;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 0;
+  top: 30px;
+  line-height: 0;
+  right: 266px;
   color: #66cccb;
   cursor: pointer;
+}
+
+header .menuSearchBtn.mobile .material-icons {
+  font-size: 30px;
 }
 
 @media (max-width: 980px) {

@@ -41,7 +41,7 @@
                     $('.menuSearch').slideToggle();
                     $('.menuSearch').toggleClass('focus');
                     $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-                    var msi = msb[i].find('.menuSearchBtn');
+                    var msi = this.find('.menuSearchBtn');
                     console.log(msi);
                     if (msi.innerHTML === "search") {
                         msi.innerHTML = "close";
