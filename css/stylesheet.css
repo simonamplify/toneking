@@ -127,18 +127,22 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
           transform: rotate(180deg);
 }
 
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item.menu-item-has-children.menu-item-has-children > a {
+  color: #66cccb !important;
+}
+
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item.menu-item-has-children.menu-item-has-children > a:hover {
+  color: #ffffff !important;
+}
+
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item .sub-menu {
   right: unset;
   left: 100%;
   top: 0;
 }
 
-header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor.menu-item-has-children > a {
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor > a {
   color: #66cccb !important;
-}
-
-header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a:hover, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor.menu-item-has-children > a:hover {
-  color: #ffffff !important;
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.twoCol > .sub-menu {

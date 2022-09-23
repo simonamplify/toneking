@@ -85,12 +85,19 @@ header {
                                             line-height: 0;
                                             transition: all 0.2s ease-in-out;
                                         }
-                                        
                                     }
                                     &:hover {
                                         > a {
                                             &::after {
                                                 transform: rotate(180deg);
+                                            }
+                                        }
+                                    }
+                                    &.menu-item-has-children {
+                                        > a {
+                                            color: $teal!important;
+                                            &:hover {
+                                                color: $white!important;
                                             }
                                         }
                                     }
@@ -102,12 +109,9 @@ header {
                                 }
                             }
                         }
-                        &.current-menu-item, &.current-menu-ancestor.menu-item-has-children {
+                        &.current-menu-item, &.current-menu-ancestor {
                             > a {
                                 color: $teal!important;
-                                &:hover {
-                                    color: $white!important;
-                                }
                             }
                         }
                         &.twoCol {
