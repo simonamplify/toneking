@@ -20,11 +20,8 @@ header {
                         &.menu-item-has-children {
                             > a {
                                 position: relative;
-                                -webkit-border-radius: 50px;
-                                -moz-border-radius: 50px;
-                                border-radius: 50px;
                                 &:hover {
-                                    color: $teal!important;
+                                    color: $white!important;
                                     @include opacity100();
                                 }
                                 &::after {
@@ -68,6 +65,9 @@ header {
                                     min-width: 200px;
                                     white-space: nowrap;
                                     text-align: left;
+                                    -webkit-border-radius: 50px;
+                                    -moz-border-radius: 50px;
+                                    border-radius: 50px;
                                     &::before {
                                         bottom: 4px;
                                         transform: translateY(0);
@@ -98,13 +98,13 @@ header {
                                 .sub-menu {
                                     right: unset;
                                     left: 100%;
-                                    top: 100%;
+                                    top: 0;
                                 }
                             }
                         }
                         &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
                             > a {
-                                color: $teal!important;
+                                color: $teal;
                             }
                         }
                         &.twoCol {
