@@ -52,7 +52,6 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-chi
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  top: calc(50% - 3px) !important;
   line-height: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -91,8 +90,6 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item a {
-  padding: 0;
-  margin: 6px 20px;
   display: block;
   width: auto;
   min-width: 200px;
@@ -106,6 +103,10 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
           transform: translateY(0);
 }
 
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item a:hover {
+  background-color: #66cccb;
+}
+
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item.menu-item-has-children > a {
   position: relative;
 }
@@ -115,8 +116,7 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  top: calc(50% - 3px) !important;
-  right: -25px;
+  right: 20px;
   line-height: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -129,7 +129,7 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item .sub-menu {
   right: unset;
-  left: 20%;
+  left: 100%;
   top: 100%;
 }
 
