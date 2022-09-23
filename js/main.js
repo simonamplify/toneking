@@ -43,7 +43,7 @@
                     $('.menuSearch.focus .dgwt-wcas-search-input').focus();
                     var msbi = this.querySelector('.material-icons');
                     if (msbi.innerHTML === "search") {
-                        msbi.innerHTML = "close";
+                        msbi.innerHTML = "search_off";
                     } else {
                         msbi.innerHTML = "search";
                     }
@@ -52,18 +52,6 @@
                 });
             }
         }
-        $('.et_mobile_nav_menu').click(function() {
-            console.log('test');
-            $('.menuSearch').slideToggle();
-            $('.menuSearch').toggleClass('focus');
-            $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-            var ms = document.querySelector('.menuSearchBtn.mobile .material-icons');
-            if (ms.innerHTML === "search") {
-                ms.innerHTML = "close";
-            } else {
-                ms.innerHTML = "search";
-            }
-        });
 	    /* Add Tag Line */
 	    $('#main-header .et_menu_container').append('<h5 class="headerTagline">TONE YOU CAN FEEL<span class="tealFont">.</span></h5>');
 		/* Create no menu class */
