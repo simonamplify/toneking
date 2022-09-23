@@ -53,17 +53,17 @@
                 });
             }
         }
-        /*$('.menuSearchBtn').click(function(){
+        $('.et_mobile_nav_menu').click(function(){
             $('.menuSearch').slideToggle();
             $('.menuSearch').toggleClass('focus');
             $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-            var ms = document.querySelectorAll('.menuSearchBtn .material-icons');{
-            if (ms[i].innerHTML === "search") {
-                ms[i].innerHTML = "close";
+            var ms = document.querySelector('.menuSearchBtn.mobile .material-icons');{
+            if (ms.innerHTML === "search") {
+                ms.innerHTML = "close";
             } else {
-                ms[i].innerHTML = "search";
+                ms.innerHTML = "search";
             }
-        });*/
+        });
 	    /* Add Tag Line */
 	    $('#main-header .et_menu_container').append('<h5 class="headerTagline">TONE YOU CAN FEEL<span class="tealFont">.</span></h5>');
 		/* Create no menu class */
