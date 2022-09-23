@@ -377,9 +377,10 @@ header .menuSearchBtn {
 
 header .menuSearchBtn.mobile {
   display: none;
-  top: 30px;
+  position: absolute;
+  top: 26px;
   line-height: 0;
-  right: 266px;
+  right: 70px;
   color: #66cccb;
   cursor: pointer;
 }
