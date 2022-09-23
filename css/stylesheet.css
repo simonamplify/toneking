@@ -127,10 +127,6 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu
           transform: rotate(180deg);
 }
 
-header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item.menu-item-has-children.menu-item-has-children > a {
-  color: #66cccb !important;
-}
-
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item .sub-menu li.menu-item.menu-item-has-children.menu-item-has-children > a:hover {
   color: #ffffff !important;
 }
