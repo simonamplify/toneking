@@ -30,7 +30,7 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a {
   z-index: 1;
 }
 
-header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a:hover, header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a:focus {
+header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item a:hover {
   background-color: transparent;
   opacity: 1;
 }
@@ -217,7 +217,7 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   font-weight: 700;
 }
 
-header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:hover, header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:focus {
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:hover {
   background-color: #66cccb !important;
   opacity: 1;
 }
@@ -298,6 +298,24 @@ header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.m
   color: #ffffff !important;
 }
 
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.account > a {
+  color: #000000 !important;
+}
+
+header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.account > a:hover {
+  color: #66cccb !important;
+  background-color: transparent !important;
+}
+
 header .menuSearch {
   display: none;
 }
@@ -348,6 +366,26 @@ header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-close:hover svg path {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   fill: #66cccb;
+}
+
+header .menuSearchBtn {
+  display: block;
+}
+
+@media (max-width: 980px) {
+  header .menuSearchBtn {
+    display: none;
+  }
+}
+
+header .menuSearchBtn.mobile {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  header .menuSearchBtn.mobile {
+    display: block;
+  }
 }
 
 #page-container #et-main-area {

@@ -11,7 +11,7 @@ header {
                             position: relative;
                             @include ease2();
                             z-index: 1;
-                            &:hover, &:focus {
+                            &:hover {
                                 background-color: transparent;
                                 opacity: 1;
                                 //color: $white!important;
@@ -171,7 +171,7 @@ header {
                                 -moz-border-radius: 50px;
                                 border-radius: 50px;
                                 font-weight: 700;
-                                &:hover, &:focus {
+                                &:hover {
                                     background-color: $teal!important;
                                     opacity: 1;
                                 }
@@ -246,6 +246,17 @@ header {
                                     }
                                 }
                             }
+                            &.account {
+                                display: flex;
+                                align-items: center;
+                                > a {
+                                    color: $black!important;
+                                    &:hover {
+                                        color: $teal!important;
+                                        background-color: transparent!important;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -282,6 +293,15 @@ header {
         }
     }
     .menuSearchBtn {
-        
+        display: block;
+            @media (max-width: 980px) {
+                display: none;
+            }
+        &.mobile {
+            display: none;
+            @media (max-width: 980px) {
+                display: block;
+            }
+        }
     }
 }
