@@ -41,11 +41,11 @@
                     $('.menuSearch').slideToggle();
                     $('.menuSearch').toggleClass('focus');
                     $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-                    if (msb[i].children('.material-icons').innerHTML === "search") {
+                    /*if (msb[i].children('.material-icons').innerHTML === "search") {
                         msb[i].children('.material-icons').innerHTML = "close";
                     } else {
                         msb[i].children('.material-icons').innerHTML = "search";
-                    }
+                    }*/
                     event.preventDefault();
                     return false;
                 });
