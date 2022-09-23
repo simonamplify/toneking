@@ -149,7 +149,6 @@ header {
                         -moz-border-radius-bottomleft: 20px;
                         border-bottom-right-radius: 20px;
                         border-bottom-left-radius: 20px;
-                        line-height: 1.4em;
                         @media (hover: none) {
                             max-height: 600px;
                             max-height: 85vh;
@@ -158,10 +157,10 @@ header {
                         }
                         li.menu-item {
                             text-align: left;
+                            padding: 0 20px;
                             a {
                                 border: none;
                                 padding: 6px 20px;
-                                line-height: 1.4em;
                                 width: auto;
                                 display: inline-block;
                                 position: relative;
@@ -173,7 +172,7 @@ header {
                                 border-radius: 50px;
                                 font-weight: 700;
                                 &:hover, &:focus {
-                                    background-color: $teal;
+                                    background-color: $teal!important;
                                     opacity: 1;
                                 }
                             }
@@ -184,7 +183,7 @@ header {
                                 > a {
                                     background-color: transparent;
                                     position: relative;
-                                    font-weight: normal;
+                                    font-weight: 700; 
                                     &::after {
                                         font-family: 'ETmodules'; 
                                         text-align: center; 
@@ -204,7 +203,7 @@ header {
                                 }
                                 &.menu-item-has-children {
                                     > a {
-                                        padding: 6px 20px 6px 30px;
+                                        padding: 6px 30px 6px 20px;
                                         &:hover {
                                             color: $white!important;
                                         }
@@ -212,7 +211,8 @@ header {
                                 }
                                 ul.sub-menu {
                                     display: none !important; 
-                                    visibility: hidden !important;  
+                                    visibility: hidden !important;
+                                    background-color: transparent !important; 
                                 }
                                 &.visible {
                                     > a {
