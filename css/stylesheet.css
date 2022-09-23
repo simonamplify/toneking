@@ -40,7 +40,7 @@ header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-chi
 }
 
 header .et_pb_menu.tkMenu .et-menu-nav ul.et-menu li.menu-item.menu-item-has-children > a:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   zoom: 1;
   filter: alpha(opacity=100);
   opacity: 1.0;
