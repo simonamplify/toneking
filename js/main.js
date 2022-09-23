@@ -53,11 +53,11 @@
                 });
             }
         }
-        $('.et_mobile_nav_menu').click(function(){
+        $('.et_mobile_nav_menu').click(function() {
             $('.menuSearch').slideToggle();
             $('.menuSearch').toggleClass('focus');
             $('.menuSearch.focus .dgwt-wcas-search-input').focus();
-            var ms = document.querySelector('.menuSearchBtn.mobile .material-icons');{
+            var ms = document.querySelector('.menuSearchBtn.mobile .material-icons');
             if (ms.innerHTML === "search") {
                 ms.innerHTML = "close";
             } else {
