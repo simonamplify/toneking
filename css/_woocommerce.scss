@@ -101,7 +101,7 @@
                         align-content: center;
                         align-items: center;
                         
-                        color: $primary1;
+                        color: $teal1;
                         @include ease2();
                         .material-icons {
                             margin-right: 5px;
@@ -406,7 +406,7 @@
                     left: 0;
                     bottom: -.2rem;
                     right: 100%;
-                    border-bottom: 1px solid $primary1;
+                    border-bottom: 1px solid $teal1;
                 }
                 &::after {
                     content: "";
@@ -414,7 +414,7 @@
                     right: 0;
                     left: 100%;
                     bottom: -.2rem;
-                    border-bottom: 1px solid $primary1;
+                    border-bottom: 1px solid $teal1;
                     -webkit-transition: left .15s ease-out;
                     -o-transition: left .15s ease-out;
                     transition: left .15s ease-out;
@@ -607,8 +607,8 @@
                                     .button:disabled, .button:disabled[disabled] {
                                         padding: 0.5em 1.5em 0.3em 1.5em !important;
                                         font-size: 16px;
-                                        background-color: $primary1;
-                                        border-color: $primary1;
+                                        background-color: $teal1;
+                                        border-color: $teal1;
                                         border-radius: 0px;
                                         font-weight: bold;
                                         font-style: normal;
@@ -681,13 +681,13 @@
                                             content: none;
                                         }
                                         &:hover {
-                                            background-color: $primary1;
+                                            background-color: $teal1;
                                             color: $white;
                                         }
                                     }
                                     &.is-active {
                                         a {
-                                            background-color: $primary1;
+                                            background-color: $teal1;
                                             color: $white;
                                         }
                                     }
