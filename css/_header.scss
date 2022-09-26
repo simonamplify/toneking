@@ -313,4 +313,30 @@ header {
             }
         }
     }
+    /* Transparent header */
+    .et_builder_inner_content {
+        &:not(.has_et_pb_sticky) {
+            .et_pb_menu__logo {
+                img {
+                    filter: invert(100%);
+                }
+            }
+            .material-icons {
+                color: $white;
+                transition: color 0.2s;
+                &:hover {
+                    background: $teal;
+                }
+            }
+            .et_divi_100_custom_hamburger_menu__icon {
+                > div {
+                    background: $white;
+                    transition: background 0.2s;
+                    &:hover {
+                        background: $teal;
+                    }
+                }
+            }
+        }
+    }
 }
