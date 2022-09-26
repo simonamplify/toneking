@@ -404,13 +404,13 @@ header .et_builder_inner_content:not(.has_et_pb_sticky) .et_pb_menu__logo img {
           filter: invert(100%);
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .material-icons {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .menuSearchBtn .material-icons {
   color: #ffffff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .material-icons:hover {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .menuSearchBtn .material-icons:hover {
   color: #66cccb;
 }
 

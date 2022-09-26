@@ -321,15 +321,18 @@ header {
                     filter: invert(100%);
                 }
             }
+            .menuSearchBtn {
+                .material-icons {
+                    color: $white;
+                    transition: color 0.2s;
+                    &:hover {
+                        color: $teal;
+                    }
+                }
+            }
             .et_mobile_nav_menu {
                 .mobile_nav {
-                    .material-icons {
-                        color: $white;
-                        transition: color 0.2s;
-                        &:hover {
-                            color: $teal;
-                        }
-                    }
+                    
                     .et_divi_100_custom_hamburger_menu__icon {
                         > div {
                             background: $white;
