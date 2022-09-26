@@ -101,7 +101,7 @@
                         align-content: center;
                         align-items: center;
                         
-                        color: $teal1;
+                        color: $teal;
                         @include ease2();
                         .material-icons {
                             margin-right: 5px;
@@ -116,7 +116,7 @@
                 table.shop_attributes {
                     tr:nth-child(even)  {
                         th {
-                            background-color: $lgrey;
+                            background-color: $bgGrey;
                         }
                     }
                 } 
@@ -125,7 +125,7 @@
                         .input.text, input.title, input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
                             @include ease2();
                             &::placeholder {
-                                color: $drk!important;
+                                color: $font!important;
                             }
                         }
                     }
@@ -182,7 +182,7 @@
                         letter-spacing: .02rem;
                         font-weight: 500;
                         &::placeholder {
-                            color: $drk;
+                            color: $font;
                         }
                         &:focus {
                             border-color: $black;
@@ -235,7 +235,7 @@
                         border-radius: 0;
                         padding: 0;
                         line-height:44px;
-                        border: solid 1px $drk!important;
+                        border: solid 1px $font!important;
                         color: $grey!important;
                         font-size: 18px!important;
                         background-color: transparent!important;
@@ -406,7 +406,7 @@
                     left: 0;
                     bottom: -.2rem;
                     right: 100%;
-                    border-bottom: 1px solid $teal1;
+                    border-bottom: 1px solid $teal;
                 }
                 &::after {
                     content: "";
@@ -414,7 +414,7 @@
                     right: 0;
                     left: 100%;
                     bottom: -.2rem;
-                    border-bottom: 1px solid $teal1;
+                    border-bottom: 1px solid $teal;
                     -webkit-transition: left .15s ease-out;
                     -o-transition: left .15s ease-out;
                     transition: left .15s ease-out;
@@ -446,7 +446,7 @@
                         .woocommerce-form-coupon {
                             border-radius: 0;
                             border: none;
-                            background-color: $lgrey;
+                            background-color: $bgGrey;
                             #coupon_code {
                                 height: 45px;
                                 line-height: 45px;
@@ -472,7 +472,7 @@
                             .woocommerce-checkout-payment {
                                 border: none;
                                 border-radius: 0;
-                                background-color: $lgrey;
+                                background-color: $bgGrey;
                                 a {
                                     text-decoration: underline;
                                     transition: text-decoration 0.4s linear;
@@ -562,7 +562,7 @@
                                         padding: 0;
                                         line-height:44px;
                                         border: solid 1px $grey!important;
-                                        color: $drk!important;
+                                        color: $font!important;
                                         font-size: 18px!important;
                                         background-color: transparent!important;
                                         &:focus {
@@ -580,12 +580,12 @@
                                             border-radius: 0;
                                             font-weight: 400!important;
                                             font-size: 18px!important;
-                                            background-color: $lgrey!important;
-                                            border: 1px solid $lgrey!important;
+                                            background-color: $bgGrey!important;
+                                            border: 1px solid $bgGrey!important;
                                             color: $black!important;
                                             @include ease2();
                                             &::placeholder {
-                                                color: $drk;
+                                                color: $font;
                                             }
                                             @media (max-width:768px) {
                                                 background-color: $white!important;
@@ -607,8 +607,8 @@
                                     .button:disabled, .button:disabled[disabled] {
                                         padding: 0.5em 1.5em 0.3em 1.5em !important;
                                         font-size: 16px;
-                                        background-color: $teal1;
-                                        border-color: $teal1;
+                                        background-color: $teal;
+                                        border-color: $teal;
                                         border-radius: 0px;
                                         font-weight: bold;
                                         font-style: normal;
@@ -681,13 +681,13 @@
                                             content: none;
                                         }
                                         &:hover {
-                                            background-color: $teal1;
+                                            background-color: $teal;
                                             color: $white;
                                         }
                                     }
                                     &.is-active {
                                         a {
-                                            background-color: $teal1;
+                                            background-color: $teal;
                                             color: $white;
                                         }
                                     }
@@ -817,7 +817,7 @@
     } 
     .woocommerce {
         .woocommerce-result-count {
-            color: $drk;
+            color: $font;
         }
         .products  {
             padding-top: 10px;
@@ -825,7 +825,7 @@
         select {
             display: block;
             font-size: 14px!important;
-            color: $drk!important;
+            color: $font!important;
             line-height: 1.8em;
             padding: 3px 33px 3px 10px;
             width: 100%;
@@ -840,7 +840,7 @@
             -webkit-appearance: none;
             appearance: none;
             @include ease2();
-            background-color: $lgrey;
+            background-color: $bgGrey;
             background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.09 39.24'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M55.7,3.47,38.38,20.13a6.25,6.25,0,0,1-8.67,0L12.4,3.47,10.6,1.75A6.25,6.25,0,0,0,6.27,0h0A6.25,6.25,0,0,0,1.93,10.76L12.4,20.83,29.71,37.49a6.25,6.25,0,0,0,8.67,0L55.7,20.83,66.16,10.76A6.25,6.25,0,0,0,61.83,0h0a6.27,6.27,0,0,0-4.34,1.75Z'/%3e%3c/svg%3e");
             background-repeat: no-repeat, repeat;
             background-position: right 15px top 50%, 0 0;
