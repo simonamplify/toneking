@@ -414,13 +414,13 @@ header .et_builder_inner_content:not(.has_et_pb_sticky) .menuSearchBtn .material
   color: #66cccb;
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon > div {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon div {
   background: #ffffff;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon > div:hover {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon:hover div {
   background: #66cccb;
 }
 
