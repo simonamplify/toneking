@@ -316,32 +316,34 @@ header {
     /* Transparent header */
     .et_builder_inner_content {
         &:not(.has_et_pb_sticky) {
-            .et_pb_menu__logo {
-                img {
-                    filter: invert(100%);
-                }
-            }
-            .menuSearchBtn {
-                .material-icons {
-                    color: $white;
-                    transition: color 0.2s;
-                    &:hover {
-                        color: $teal;
+            .transparentHeader {
+                .et_pb_menu__logo {
+                    img {
+                        filter: invert(100%);
                     }
                 }
-            }
-            .et_mobile_nav_menu {
-                .mobile_nav {
-                    
-                    .et_divi_100_custom_hamburger_menu__icon {
-                        div {
-                            background: $white;
-                            transition: background 0.2s;
-                            
-                        }
+                .menuSearchBtn {
+                    .material-icons {
+                        color: $white;
+                        transition: color 0.2s;
                         &:hover {
+                            color: $teal;
+                        }
+                    }
+                }
+                .et_mobile_nav_menu {
+                    .mobile_nav {
+                        
+                        .et_divi_100_custom_hamburger_menu__icon {
                             div {
-                                background: $teal;
+                                background: $white;
+                                transition: background 0.2s;
+                                
+                            }
+                            &:hover {
+                                div {
+                                    background: $teal;
+                                }
                             }
                         }
                     }

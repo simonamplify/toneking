@@ -399,28 +399,28 @@ header .menuSearchBtn.mobile .material-icons {
   }
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_pb_menu__logo img {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .transparentHeader .et_pb_menu__logo img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .menuSearchBtn .material-icons {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .transparentHeader .menuSearchBtn .material-icons {
   color: #ffffff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .menuSearchBtn .material-icons:hover {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .transparentHeader .menuSearchBtn .material-icons:hover {
   color: #66cccb;
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon div {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .transparentHeader .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon div {
   background: #ffffff;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
 
-header .et_builder_inner_content:not(.has_et_pb_sticky) .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon:hover div {
+header .et_builder_inner_content:not(.has_et_pb_sticky) .transparentHeader .et_mobile_nav_menu .mobile_nav .et_divi_100_custom_hamburger_menu__icon:hover div {
   background: #66cccb;
 }
 
