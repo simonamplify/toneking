@@ -178,10 +178,10 @@
                         border-radius: 0;
                         padding: 0;
                         line-height:44px;
-                        border: solid 1px $font!important;
-                        color: $grey!important;
+                        border: solid 1px $grey!important;
+                        color: $font!important;
                         font-size: 18px!important;
-                        background-color: transparent!important;
+                        background-color: $white!important;
                         &:focus {
                             color: $white!important;
                         }
@@ -463,7 +463,7 @@
                                         border: solid 1px $grey!important;
                                         color: $font!important;
                                         font-size: 18px!important;
-                                        background-color: transparent!important;
+                                        background-color: $white!important;
                                         &:focus {
                                             color: $black!important;
                                         }
@@ -647,7 +647,10 @@
                                         line-height: 1em;
                                         padding-bottom: 0!important;
                                         .reset_variations {
-
+                                            visibility: visible;
+                                            position: absolute;
+                                            bottom: 0px;
+                                            transform: translateY(150%);
                                         }
                                     }
                                 }
@@ -703,8 +706,9 @@
                                 display: block;
                                 padding: 0 15px;
                                 transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
-                                border: solid 2px $black;
-                                color: $black;
+                                border: solid 2px $teal;
+                                border-radius: 100px;
+                                color: $teal;
                                 font-size: 16px;
                                 line-height: 1.8em;
                                 font-weight: 400;                       
@@ -715,12 +719,12 @@
                                 @media (max-width:767px) {
                                     font-size: 14px;
                                     line-height: 1.7em;
-                                    border: solid 1px $black;
+                                    border: solid 1px $teal;
                                 }
                             }
                             &.current-menu-item {
                                 a {
-                                    background-color: $black;
+                                    background-color: $teal;
                                     color: $white;
                                 }
                             }
@@ -765,6 +769,7 @@
                 box-sizing: border-box;
             margin: 0 auto;
             border: 1px solid $grey;
+            border-radius: 100px;
             -webkit-box-shadow: none;
                 box-shadow: none;
             -moz-appearance: none;
@@ -781,11 +786,11 @@
             display: none;
         }
         select:hover {
-            border-color: $black;
+            border-color: $teal;
             color: $black;
         }
         select:focus, select:active {
-            border-color: $black;
+            border-color: $teal;
             box-shadow: none;
             box-shadow: none -moz-mac-focusring;
             color: $black;
