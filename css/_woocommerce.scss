@@ -12,37 +12,11 @@
                 }
                 // Buttons
                 input[type=submit], .button, .et_pb_button {
-                    padding: 0.5em 1.5em 0.3em 1.5em !important;
+                    /*padding: 0.5em 1.5em 0.3em 1.5em !important;
                     &:hover {
                         padding: 0.5em 1.5em 0.3em 1.5em !important;
                         //background: $black!important;
-                    }
-                }
-                .et_pb_wc_breadcrumb  {
-                    a {
-                        transition: color 0.2s ease;
-                        white-space: normal;
-                        &::before {
-                            content: none;
-                        }
-                        &::after {
-                            content: none;
-                        }
-                        &:hover {
-                            color: $white!important;
-                        }
-                    }
-                }
-                .subHeader {
-                    a {
-                        white-space: normal;
-                        &::before {
-                            content: none;
-                        }
-                        &::after {
-                            content: none;
-                        }
-                    }
+                    }*/
                 }
                 .onsale {
                     padding: 5px 18px 0 18px!important;
@@ -78,37 +52,6 @@
                                 &:nth-child(2) {
                                     flex-grow: 3;
                                 }
-                            }
-                        }
-                    }
-                }
-                .manuals {
-                    margin-top: 30px;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    align-content: center;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 30px;
-                    .productManual {
-                        &::before, &::after {
-                            content: none;
-                        }
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        align-content: center;
-                        align-items: center;
-                        
-                        color: $teal;
-                        @include ease2();
-                        .material-icons {
-                            margin-right: 5px;
-                        }
-                        &:hover {
-                            .manualLabel {
-                                color: $white;
                             }
                         }
                     }
@@ -395,46 +338,6 @@
                     color: $black;
                 }
             }   
-            // links
-            a:not(.button, .et_pb_button, .woocommerce-Button) {
-                text-decoration: none!important;
-                position: relative;
-                cursor: pointer;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: -.2rem;
-                    right: 100%;
-                    border-bottom: 1px solid $teal;
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    right: 0;
-                    left: 100%;
-                    bottom: -.2rem;
-                    border-bottom: 1px solid $teal;
-                    -webkit-transition: left .15s ease-out;
-                    -o-transition: left .15s ease-out;
-                    transition: left .15s ease-out;
-                    transition-delay: 0s;
-                    transition-delay: .15s;
-                }
-                &:hover {
-                    &::before {
-                        content: "";
-                        right: 0;
-                        -webkit-transition: right .15s ease-out;
-                        -o-transition: right .15s ease-out;
-                        transition: right .15s ease-out;
-                    }
-                    &::after {
-                        content: "";
-                        left: 0;
-                    }
-                }
-            }
         }
     }
     // Checkout page overrides
@@ -536,11 +439,7 @@
                         .woocommerce-cart-form {
                             .woocommerce-cart-form__contents {
                                 .woocommerce-cart-form__cart-item {
-                                    a {
-                                        &::before, &::after {
-                                            content: none;
-                                        }
-                                    }
+                                    
                                     .product-remove {
                                         a.remove {
                                             line-height: 0.9;
@@ -674,12 +573,7 @@
                                         padding: 12px 25px 10px 25px;
                                         font-weight: 600;
                                         @include ease2();
-                                        &::before {
-                                            content: none;
-                                        }
-                                        &::after {
-                                            content: none;
-                                        }
+                                        
                                         &:hover {
                                             background-color: $teal;
                                             color: $white;
@@ -733,7 +627,7 @@
                     .variationAddCart {
                         .variations_form {
                             display: flex;
-                            gap: 5%;
+                            gap: 20px;
                             flex-direction: row;
                             flex-wrap: nowrap;
                             align-items: flex-start;
@@ -746,6 +640,15 @@
                                 tbody {
                                     label {
                                         padding-right: 10px; 
+                                        line-height: 1.7em;
+                                    }
+                                    .value {
+                                        padding-bottom: 0;
+                                        line-height: 1em;
+                                        padding-bottom: 0!important;
+                                        .reset_variations {
+
+                                        }
                                     }
                                 }
                             }
