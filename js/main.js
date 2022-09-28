@@ -85,7 +85,7 @@
         $('.et_pb_shop .ajax_add_to_cart').on('click', function(event) {
 			$(this).text('Added to Cart');
             window.setTimeout(function () {
-                $('.et_pb_shop .ajax_add_to_cart').text('Add to Cart');
+                $(this).text('Add to Cart');
             }, 5000);
 		});
 	});
