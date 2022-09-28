@@ -40,5 +40,5 @@ function artistsDirectory() {
 }
 add_shortcode('artistsDirectory', 'artistsDirectory');
 // Add cart button to shop archive pages
-add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 20 );
+add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 10);
 ?>
