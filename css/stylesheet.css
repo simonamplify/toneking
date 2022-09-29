@@ -943,6 +943,7 @@ GLOBAL
       -ms-flex-order: 2;
           order: 2;
   padding: 0.3em 1em !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 767px) {
@@ -954,7 +955,8 @@ GLOBAL
 .woocommerce-page #page-container #et-main-area #main-content .woocommerce-message .button:hover, .woocommerce-page #page-container #et-main-area #main-content .woocommerce-info .button:hover {
   padding: 0.3em 1em !important;
   color: #ffffff !important;
-  opacity: 0.7;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .woocommerce-page #page-container #et-main-area #main-content .woocommerce-message .showcoupon, .woocommerce-page #page-container #et-main-area #main-content .woocommerce-info .showcoupon {
