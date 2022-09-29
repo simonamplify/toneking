@@ -18,7 +18,7 @@
                     color: $teal!important;
                     letter-spacing: 1px;
                     &:hover {
-                        background-color: $drkTeal!important;
+                        color: $drkTeal!important;
                     }
                 }
                 .onsale {
@@ -498,7 +498,7 @@
                                                 margin-bottom: 10px;
                                             }
                                             &:focus {
-                                                border-color: $black!important;
+                                                border-color: $teal!important;
                                             }
                                         }
                                         
@@ -509,8 +509,7 @@
                                         }
                                     }
                                     .button:disabled, .button:disabled[disabled] {
-                                        padding: 0.5em 1.5em 0.3em 1.5em !important;
-                                        font-size: 16px;
+                                        padding: 0.3em 1em !important;
                                         background-color: $teal;
                                         border-color: $teal;
                                         border-radius: 0px;
@@ -518,7 +517,7 @@
                                         font-style: normal;
                                         text-transform: uppercase;
                                         text-decoration: none;
-                                        letter-spacing: -1px;
+                                        letter-spacing: 1px;
                                         opacity: 0.5;
                                         color: $white;
                                     }
@@ -843,6 +842,28 @@
                         background-color: $black!important;
                     }
                 }
+            }
+        }
+    }
+}
+.xoo-wsc-modal {
+    .xoo-wsc-container {
+        .xoo-wsc-header {
+            .xoo-wsch-top {
+                .xoo-wsch-text {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+        .button {
+            font-size: 17px!important;
+            border-radius: 50px!important;
+            background-color: transparent!important;
+            color: $teal!important;
+            letter-spacing: 1px;
+            &:hover {
+                color: $drkTeal!important;
             }
         }
     }
