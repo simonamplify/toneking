@@ -1570,6 +1570,29 @@ GLOBAL
           align-items: flex-start;
 }
 
+@media (max-width: 767px) {
+  .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1582,6 +1605,16 @@ GLOBAL
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations tbody label {
