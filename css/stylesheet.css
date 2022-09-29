@@ -934,6 +934,7 @@ GLOBAL
 .woocommerce-page #page-container #et-main-area #main-content .woocommerce-message, .woocommerce-page #page-container #et-main-area #main-content .woocommerce-info {
   padding-left: 30px !important;
   padding-right: 30px !important;
+  border-radius: 15px;
 }
 
 .woocommerce-page #page-container #et-main-area #main-content .woocommerce-message .button, .woocommerce-page #page-container #et-main-area #main-content .woocommerce-info .button {
@@ -1072,7 +1073,7 @@ GLOBAL
 }
 
 .woocommerce-page #page-container #et-main-area #main-content form .select2.select2-container--open .selection .select2-selection .select2-selection__arrow b {
-  border-color: transparent transparent #eaeaea transparent;
+  border-color: transparent transparent #595959 transparent;
   border-width: 0 4px 5px 4px;
 }
 
@@ -1505,12 +1506,13 @@ GLOBAL
 .woocommerce-page.woocommerce-account #page-container #et-main-area #main-content .woocommerce .woocommerce-MyAccount-navigation ul li a {
   font-family: 'Work Sans',Helvetica,Arial,Lucida,sans-serif;
   text-transform: uppercase;
-  font-size: 17px;
-  color: #ffffff;
-  background-color: #000000;
-  letter-spacing: -1px;
-  padding: 12px 25px 10px 25px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #eaeaea;
+  letter-spacing: 1px;
+  padding: 10px 25px 8px 25px;
   font-weight: 600;
+  border-radius: 100px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
