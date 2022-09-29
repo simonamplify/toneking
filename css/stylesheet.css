@@ -1642,8 +1642,8 @@ GLOBAL
   visibility: visible;
   position: absolute;
   bottom: 0px;
-  -webkit-transform: translate(10px, 120%);
-          transform: translate(10px, 120%);
+  -webkit-transform: translate(15px, 120%);
+          transform: translate(15px, 120%);
   margin-top: 0;
 }
 
