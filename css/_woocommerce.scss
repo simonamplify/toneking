@@ -844,9 +844,10 @@
         }
         .products  {
             padding-top: 10px;
-            .product  {
-                .add_to_cart_button {
+            .product.product-type-variable  {
+                .button.add_to_cart_button {
                     font-size: 14px!important;
+                    margin-top: 20px;
                     margin-right: 10px;
                 }
             }

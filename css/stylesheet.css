@@ -1854,8 +1854,9 @@ GLOBAL
   padding-top: 10px;
 }
 
-.et_pb_shop .woocommerce .products .product .add_to_cart_button {
+.et_pb_shop .woocommerce .products .product.product-type-variable .button.add_to_cart_button {
   font-size: 14px !important;
+  margin-top: 20px;
   margin-right: 10px;
 }
 
