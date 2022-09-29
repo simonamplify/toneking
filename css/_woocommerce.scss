@@ -17,6 +17,9 @@
                     background-color: transparent!important;
                     color: $teal!important;
                     letter-spacing: 1px;
+                    &:hover {
+                        background-color: $drkTeal!important;
+                    }
                 }
                 .onsale {
                     padding: 5px 18px!important;
@@ -79,12 +82,12 @@
                     padding-right: 30px!important;
                     .button  {
                         order: 2;
-                        padding: 0.5em 1.5em 0.3em 1.5em !important;
+                        padding: 0.3em 1em !important;
                         @media (max-width:767px) {
                             margin-top: 15px;
                         }
                         &:hover {
-                            padding: 0.5em 1.5em 0.3em 1.5em !important;
+                            padding: 0.3em 1em !important;
                             color: $white!important;
                             opacity: 0.7;
                             //background-color: $white!important;
