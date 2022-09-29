@@ -92,7 +92,7 @@
                             padding: 0.3em 1em !important;
                             color: $white!important;
                             opacity: 1;
-                            background-color: rgba(255,255,255,0.2)!important;
+                            background-color: rgba(255,255,255,0.1)!important;
                         }
                     }
                     .showcoupon {
@@ -677,7 +677,8 @@
                                             visibility: visible;
                                             position: absolute;
                                             bottom: 0px;
-                                            transform: translateY(150%);
+                                            transform: translate(10px, 120%);
+                                            margin-top: 0;
                                             @media (max-width: 767px) {
                                                 bottom: unset;
                                                 transform: translate(100%, -50%);

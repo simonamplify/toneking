@@ -956,7 +956,7 @@ GLOBAL
   padding: 0.3em 1em !important;
   color: #ffffff !important;
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .woocommerce-page #page-container #et-main-area #main-content .woocommerce-message .showcoupon, .woocommerce-page #page-container #et-main-area #main-content .woocommerce-info .showcoupon {
@@ -1642,8 +1642,9 @@ GLOBAL
   visibility: visible;
   position: absolute;
   bottom: 0px;
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
+  -webkit-transform: translate(10px, 120%);
+          transform: translate(10px, 120%);
+  margin-top: 0;
 }
 
 @media (max-width: 767px) {
