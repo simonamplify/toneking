@@ -214,6 +214,14 @@ GLOBAL
 						background-color: transparent;
 						.et_pb_button {
 							@include boxShadow();
+							color: $white !important;
+							border-width: 0 !important;
+							border-radius: 100px!important;
+							font-size: 30px!important;
+							padding-right: 2em !important;
+							padding-left: .7em !important;
+							background-color: rgba(102,204,203,.8)!important;
+							margin-right: 30px!important;
 						}
 					}
 					.as-prev { 

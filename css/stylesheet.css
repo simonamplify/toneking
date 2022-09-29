@@ -661,6 +661,14 @@ GLOBAL
 #page-container #et-main-area #main-content .productSlider .as-arrows-control .as-prev .et_pb_button, #page-container #et-main-area #main-content .productSlider .as-arrows-control .as-next .et_pb_button {
   -webkit-box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.1);
+  color: #ffffff !important;
+  border-width: 0 !important;
+  border-radius: 100px !important;
+  font-size: 30px !important;
+  padding-right: 2em !important;
+  padding-left: .7em !important;
+  background-color: rgba(102, 204, 203, 0.8) !important;
+  margin-right: 30px !important;
 }
 
 #page-container #et-main-area #main-content .productSlider .as-arrows-control .as-prev .et_pb_button {
