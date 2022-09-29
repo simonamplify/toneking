@@ -677,6 +677,12 @@
                                             position: absolute;
                                             bottom: 0px;
                                             transform: translateY(150%);
+                                            @media (max-width: 767px) {
+                                                bottom: unset;
+                                                transform: translate(100%, -50%);
+                                                top: 50%;
+                                                right: -10px;
+                                            }
                                         }
                                     }
                                 }

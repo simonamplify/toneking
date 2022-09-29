@@ -1644,6 +1644,16 @@ GLOBAL
           transform: translateY(150%);
 }
 
+@media (max-width: 767px) {
+  .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations tbody .value .reset_variations {
+    bottom: unset;
+    -webkit-transform: translate(100%, -50%);
+            transform: translate(100%, -50%);
+    top: 50%;
+    right: -10px;
+  }
+}
+
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form select {
   display: block;
   font-size: 17px !important;
