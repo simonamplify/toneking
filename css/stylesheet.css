@@ -1854,7 +1854,7 @@ GLOBAL
   padding-top: 10px;
 }
 
-.woocommerce-page #page-container #et-main-area #main-content .et_pb_shop .woocommerce .products .product.product-type-variable .button.add_to_cart_button {
+.woocommerce-page #page-container #et-main-area #main-content .et_pb_shop .woocommerce .products .product.product-type-variable .button {
   font-size: 14px !important;
   margin-top: 20px !important;
   margin-right: 10px !important;
