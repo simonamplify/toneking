@@ -171,6 +171,7 @@ header {
                                 -moz-border-radius: 50px;
                                 border-radius: 50px;
                                 font-weight: 700;
+                                line-height: 1.7em;
                                 &:hover {
                                     background-color: $teal!important;
                                     opacity: 1;
@@ -238,14 +239,6 @@ header {
                                     display: inline-block;
                                 } 
                             }
-                            &.current-menu-item, &.current-menu-ancestor {
-                                > a {
-                                    color: $teal!important;
-                                    &:hover {
-                                        color: $white!important;
-                                    }
-                                }
-                            }
                             &.account {
                                 > a {
                                     display: flex;
@@ -257,6 +250,14 @@ header {
                                     }
                                 }
                             }
+                            &.current-menu-item, &.current-menu-ancestor {
+                                > a {
+                                    color: $teal!important;
+                                    &:hover {
+                                        color: $white!important;
+                                    }
+                                }
+                            } 
                         }
                     }
                 }
