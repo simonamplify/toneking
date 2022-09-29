@@ -441,13 +441,13 @@
                                         a.remove {
                                             line-height: 1.1;
                                             border-radius: 0;
-                                            color: $black!important;
+                                            color: $teal!important;
                                             font-size: 1.4em;
                                             height: 1.1em;
                                             width: 1.1em;
                                             @include ease2();
                                             &:hover {
-                                                background: $black;
+                                                background: $teal;
                                                 color: $white!important
                                             }
                                         }

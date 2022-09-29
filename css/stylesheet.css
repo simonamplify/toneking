@@ -1363,7 +1363,7 @@ GLOBAL
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .woocommerce-cart-form__cart-item .product-remove a.remove {
   line-height: 1.1;
   border-radius: 0;
-  color: #000000 !important;
+  color: #66cccb !important;
   font-size: 1.4em;
   height: 1.1em;
   width: 1.1em;
@@ -1372,7 +1372,7 @@ GLOBAL
 }
 
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .woocommerce-cart-form__cart-item .product-remove a.remove:hover {
-  background: #000000;
+  background: #66cccb;
   color: #ffffff !important;
 }
 
