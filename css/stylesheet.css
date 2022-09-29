@@ -1586,7 +1586,7 @@ GLOBAL
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations tbody label {
   padding-right: 10px;
-  line-height: 1.7em;
+  line-height: 2.3em;
 }
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations tbody .value {
@@ -1605,7 +1605,7 @@ GLOBAL
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form select {
   display: block;
-  font-size: 14px !important;
+  font-size: 17px !important;
   color: #595959 !important;
   line-height: 1.8em;
   padding: 3px 33px 3px 10px;
@@ -1623,7 +1623,7 @@ GLOBAL
   appearance: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.09 39.24'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M55.7,3.47,38.38,20.13a6.25,6.25,0,0,1-8.67,0L12.4,3.47,10.6,1.75A6.25,6.25,0,0,0,6.27,0h0A6.25,6.25,0,0,0,1.93,10.76L12.4,20.83,29.71,37.49a6.25,6.25,0,0,0,8.67,0L55.7,20.83,66.16,10.76A6.25,6.25,0,0,0,61.83,0h0a6.27,6.27,0,0,0-4.34,1.75Z'/%3e%3c/svg%3e");
   background-repeat: no-repeat, repeat;
   background-position: right 15px top 50%, 0 0;
@@ -1664,6 +1664,10 @@ GLOBAL
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form *[dir="rtl"] select {
   background-position: left 15px top 50%, 0 0;
   padding: 10px 20px 10px 33px;
+}
+
+.woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form select + ::after {
+  display: none;
 }
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .single_variation_wrap {
