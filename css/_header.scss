@@ -299,7 +299,7 @@ header {
             }
         &.mobile {
             display: none;
-            position: absolute;
+            position: absolute!important;
             top: 26px;
             line-height: 0;
             right: 70px;
