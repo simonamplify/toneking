@@ -1595,6 +1595,13 @@ GLOBAL
   }
 }
 
+.woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .out-of-stock {
+  width: 100%;
+  text-align: center;
+  color: #66cccb;
+  font-size: 17px;
+}
+
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;

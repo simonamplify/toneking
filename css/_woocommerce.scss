@@ -647,6 +647,12 @@
                                 align-content: center;
                                 justify-content: flex-start;
                             }
+                            .out-of-stock {
+                                width: 100%;
+                                text-align: center;
+                                color: $teal;
+                                font-size: 17px;
+                            }
                             .variations {
                                 flex-basis: 50%;
                                 flex-grow: 0;
