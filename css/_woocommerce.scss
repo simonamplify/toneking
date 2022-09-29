@@ -12,9 +12,11 @@
                 }
                 // Buttons
                 input[type=submit], .button, .et_pb_button {
-                    font-size: 17px;
-                    border-radius: 50px;
-                    background-color: transparent;
+                    font-size: 17px!important;
+                    border-radius: 50px!important;
+                    background-color: transparent!important;
+                    color: $teal!important;
+                    letter-spacing: 1px;
                 }
                 .onsale {
                     padding: 5px 18px!important;

@@ -853,9 +853,11 @@ GLOBAL
 }
 
 .woocommerce-page #page-container #et-main-area #main-content input[type=submit], .woocommerce-page #page-container #et-main-area #main-content .button, .woocommerce-page #page-container #et-main-area #main-content .et_pb_button {
-  font-size: 17px;
-  border-radius: 50px;
-  background-color: transparent;
+  font-size: 17px !important;
+  border-radius: 50px !important;
+  background-color: transparent !important;
+  color: #66cccb !important;
+  letter-spacing: 1px;
 }
 
 .woocommerce-page #page-container #et-main-area #main-content .onsale {
