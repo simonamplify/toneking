@@ -1833,6 +1833,11 @@ GLOBAL
   font-weight: bold;
 }
 
+.xoo-wsc-modal .xoo-wsc-container .xoo-wsc-basket {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .xoo-wsc-modal .xoo-wsc-container .button {
   font-size: 17px !important;
   border-radius: 50px !important;
@@ -1843,4 +1848,8 @@ GLOBAL
 
 .xoo-wsc-modal .xoo-wsc-container .button:hover {
   color: #5bb2b0 !important;
+}
+
+.xoo-wsc-modal.xoo-wsc-cart-active .xoo-wsc-opac {
+  opacity: 0.3;
 }

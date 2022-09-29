@@ -856,6 +856,9 @@
                 }
             }
         }
+        .xoo-wsc-basket {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
         .button {
             font-size: 17px!important;
             border-radius: 50px!important;
@@ -865,6 +868,11 @@
             &:hover {
                 color: $drkTeal!important;
             }
+        }
+    }
+    &.xoo-wsc-cart-active {
+        .xoo-wsc-opac {
+            opacity: 0.3;
         }
     }
 }
