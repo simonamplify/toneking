@@ -1586,7 +1586,7 @@ GLOBAL
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations tbody label {
   padding-right: 10px;
-  line-height: 2.3em;
+  line-height: 2.6em;
 }
 
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form .variations tbody .value {
@@ -1611,7 +1611,7 @@ GLOBAL
   display: block;
   font-size: 17px !important;
   color: #595959 !important;
-  line-height: 1.8em;
+  line-height: 2em;
   padding: 3px 33px 3px 10px;
   width: 100%;
   max-width: 300px;
