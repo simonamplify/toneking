@@ -1736,6 +1736,11 @@ GLOBAL
   padding-top: 10px;
 }
 
+.et_pb_shop .woocommerce .products .product .add_to_cart_button {
+  font-size: 14px !important;
+  margin-right: 10px;
+}
+
 .et_pb_shop .woocommerce select {
   display: block;
   font-size: 14px !important;
