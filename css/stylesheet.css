@@ -853,15 +853,13 @@ GLOBAL
 }
 
 .woocommerce-page #page-container #et-main-area #main-content input[type=submit], .woocommerce-page #page-container #et-main-area #main-content .button, .woocommerce-page #page-container #et-main-area #main-content .et_pb_button {
-  /*padding: 0.5em 1.5em 0.3em 1.5em !important;
-                    &:hover {
-                        padding: 0.5em 1.5em 0.3em 1.5em !important;
-                        //background: $black!important;
-                    }*/
+  font-size: 17px;
+  border-radius: 50px;
+  background-color: transparent;
 }
 
 .woocommerce-page #page-container #et-main-area #main-content .onsale {
-  padding: 5px 18px 0 18px !important;
+  padding: 5px 18px !important;
   white-space: nowrap;
 }
 
@@ -1363,9 +1361,12 @@ GLOBAL
 }
 
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .woocommerce-cart-form__cart-item .product-remove a.remove {
-  line-height: 0.9;
+  line-height: 1.1;
   border-radius: 0;
   color: #000000 !important;
+  font-size: 1.4em;
+  height: 1.1em;
+  width: 1.1em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1496,7 +1497,7 @@ GLOBAL
 }
 
 .woocommerce-page.woocommerce-account #page-container #et-main-area #main-content .woocommerce .woocommerce-MyAccount-navigation ul li a {
-  font-family: 'Josefin Sans',Helvetica,Arial,Lucida,sans-serif;
+  font-family: 'Work Sans',Helvetica,Arial,Lucida,sans-serif;
   text-transform: uppercase;
   font-size: 17px;
   color: #ffffff;
@@ -1633,7 +1634,7 @@ GLOBAL
   font-weight: bold !important;
   text-transform: uppercase !important;
   font-size: 20px !important;
-  letter-spacing: -1px !important;
+  letter-spacing: 1px !important;
 }
 
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu {
@@ -1682,7 +1683,7 @@ GLOBAL
 }
 
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a:hover {
-  background-color: #000000;
+  background-color: #66cccb;
   color: #ffffff;
 }
 
@@ -1738,7 +1739,7 @@ GLOBAL
   box-sizing: border-box;
   margin: 0 auto;
   border: 1px solid #eaeaea;
-  border-radius: 100px;
+  border-radius: 100px !important;
   -webkit-box-shadow: none;
   box-shadow: none;
   -moz-appearance: none;
