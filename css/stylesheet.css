@@ -1564,6 +1564,10 @@ GLOBAL
   color: #ffffff;
 }
 
+.woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .cart {
+  text-align: center;
+}
+
 .woocommerce-page.single-product #page-container #et-main-area #main-content .variationAddCart .variations_form {
   display: -webkit-box;
   display: -ms-flexbox;
