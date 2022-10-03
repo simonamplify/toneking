@@ -861,6 +861,11 @@
                                     margin-top: 20px!important;
                                     margin-right: 10px!important;
                                 }
+                                &.outofstock {
+                                    .button {
+                                        display: none;
+                                    }
+                                }
                             }
                         }
                         select {
