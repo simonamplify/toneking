@@ -1873,7 +1873,7 @@ GLOBAL
   padding-top: 10px;
 }
 
-.woocommerce-page #page-container #et-main-area #main-content .et_pb_shop .woocommerce .products .product.product-type-variable .button {
+.woocommerce-page #page-container #et-main-area #main-content .et_pb_shop .woocommerce .products .product .button {
   font-size: 14px !important;
   margin-top: 20px !important;
   margin-right: 10px !important;
