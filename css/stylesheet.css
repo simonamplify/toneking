@@ -1994,7 +1994,11 @@ GLOBAL
   border-radius: 50px !important;
   background-color: transparent !important;
   color: #66cccb !important;
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  padding: .3em 1em !important;
+  font-weight: 700 !important;
+  border: 3px solid !important;
 }
 
 .xoo-wsc-modal .xoo-wsc-container .button:hover {
