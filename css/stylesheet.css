@@ -225,6 +225,7 @@ GLOBAL
 #page-container header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item a:hover {
   background-color: #66cccb !important;
   opacity: 1;
+  color: #ffffff !important;
 }
 
 #page-container header .et_pb_menu.tkMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.menu-item-has-children > ul.sub-menu {
