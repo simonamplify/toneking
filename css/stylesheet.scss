@@ -139,7 +139,7 @@ GLOBAL
 					}
 					.et_pb_button {
 						width: 100%;
-						color: $white;
+						color: $white!important;
 						border-color: $white;
 						&:hover {
 							color: $white!important;

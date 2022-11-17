@@ -579,7 +579,7 @@ GLOBAL
 
 #page-container #et-main-area #main-content .socialCTA .mc4wp-form .et_pb_button {
   width: 100%;
-  color: #ffffff;
+  color: #ffffff !important;
   border-color: #ffffff;
 }
 
