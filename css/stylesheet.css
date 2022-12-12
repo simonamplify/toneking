@@ -712,6 +712,7 @@ GLOBAL
   font-size: 13px;
   padding: 0px 10px 0px 10px;
   border-color: #c0392b;
+  border-radius: 200px;
   background: #c0392b;
   color: #ffffff;
   letter-spacing: 0.02rem;
