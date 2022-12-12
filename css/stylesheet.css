@@ -650,13 +650,13 @@ GLOBAL
   border-radius: 0px 0px 0px 0px;
   overflow: hidden;
   -webkit-appearance: none;
-  padding: 16px;
+  font-size: 16px;
   padding-top: 1.5em;
-  padding-right: 1.5em;
+  padding-right: 1.8em;
   padding-bottom: 1.5em;
-  padding-left: 1.5em;
+  padding-left: 1.8em;
   font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
-  line-height: 2.2em;
+  line-height: 1.7em;
   color: #000000;
   background-color: #ffffff;
   width: 100%;
@@ -667,6 +667,9 @@ GLOBAL
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield input[type=email]:focus, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield input[type=password]:focus, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield input[type=tel]:focus, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield input[type=text]:focus, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield select:focus, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield textarea:focus {
   color: #000000;
   border: solid 1px #66cccb;
+}
+#page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield textarea {
+  border-radius: 20px;
 }
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield input::-webkit-input-placeholder,
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield input:-ms-input-placeholder,
@@ -689,7 +692,7 @@ GLOBAL
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield select {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.74 15.3'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpolygon class='cls-1' points='11.87 0 23.74 0 17.81 7.65 11.87 15.3 5.94 7.65 0 0 11.87 0'/%3e%3c/svg%3e");
   background-repeat: no-repeat, repeat;
-  background-position: right 15px top 50%, 0 0;
+  background-position: right 1.8em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield select:focus {
@@ -729,7 +732,6 @@ GLOBAL
   text-decoration: none;
   letter-spacing: 1px;
   display: inline-block;
-  margin: 0 0 0 18px;
   cursor: pointer;
   line-height: 1.7em !important;
   background-color: transparent;
@@ -740,6 +742,11 @@ GLOBAL
   transition-property: all !important;
   box-sizing: border-box;
   font-family: "Work Sans", Helvetica, Arial, Lucida, sans-serif;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  text-align: center;
 }
 #page-container #et-main-area .gform_wrapper input[type=submit]:hover {
   color: #5bb2b0 !important;
