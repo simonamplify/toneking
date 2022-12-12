@@ -365,7 +365,7 @@ GLOBAL
 				background: $red;
 				color: $white;
 				margin: 0 0 20px 0;
-				border-radius: 0;
+				border-radius: 200px;
 				> .gform_submission_error {
 					padding-bottom: 0;
 					color: $white;
@@ -462,8 +462,7 @@ GLOBAL
 				color: $teal;
 				padding: .3em 1em !important;
 				font-size: 20px;
-				border-width: 3px !important;
-				border-color: #66cccb;
+				border: solid 3px $teal !important;
 				border-radius: 50px;
 				font-weight: 700;
 				font-style: normal;
@@ -481,11 +480,11 @@ GLOBAL
 				transition-property: all !important;
 				box-sizing: border-box;
 				font-family: 'Work Sans',Helvetica,Arial,Lucida,sans-serif;
-				margin: 0;
 				outline: 0;
 				vertical-align: baseline;
 				box-sizing: border-box;
 				text-align: center;
+				margin: 0 0 0 auto;
 				&:hover {
 					color: $drkTeal !important;
 					border-color: $drkTeal !important;
