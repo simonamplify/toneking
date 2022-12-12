@@ -710,7 +710,7 @@ GLOBAL
 }
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .gfield_description, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .validation_message, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .gfield_validation_message {
   font-size: 13px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
   border-color: #c0392b;
   border-radius: 200px;
   background: #c0392b;
