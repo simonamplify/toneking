@@ -353,6 +353,138 @@ GLOBAL
 			border-radius: 0;
 			right: 3px;
 		}*/
+		/* ===========================
+		GRAVITY FORMS
+		=========================== */
+		.gform_wrapper {
+			.gfield_required {
+				color: $white;
+			}
+			.gform_validation_errors {
+				border-color: $red;
+				background: $red;
+				color: $white;
+				margin: 0 0 20px 0;
+				border-radius: 0;
+				> .gform_submission_error {
+					padding-bottom: 0;
+					color: $white;
+					letter-spacing: .02rem;
+				}
+				.gform-icon {
+					&::before {
+						color: $white;
+					}
+				}
+			}
+			.gform_body {
+				.gform_fields {
+					.gfield {
+						input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
+							border-radius: 0px 0px 0px 0px;
+							overflow: hidden;
+							-webkit-appearance: none;
+							padding: 16px;
+							padding-top: 1.5em;
+							padding-right: 1.5em;
+							padding-bottom: 1.5em;
+							padding-left: 1.5em;
+							font-family: 'Rubik',Helvetica,Arial,Lucida,sans-serif;
+							line-height: 2.2em;
+							color: $black;
+							background-color: $white;
+							width: 100%;
+							font-weight: 400;
+							border: 1px solid $grey;
+							border-radius: 200px;
+							&:focus {
+								color: $black;
+								border: solid 1px $teal;
+							}
+						}
+						input::-webkit-input-placeholder,
+						/*input::-moz-placeholder,*/
+						input:-ms-input-placeholder,
+						input::-ms-input-placeholder,
+						input::placeholder,
+						textarea::-webkit-input-placeholder,
+						/*textarea::-moz-placeholder,*/
+						textarea:-ms-input-placeholder,
+						textarea::-ms-input-placeholder,
+						textarea::placeholder,
+						select::-webkit-input-placeholder,
+						/*select::-moz-placeholder,*/
+						select:-ms-input-placeholder,
+						select::-ms-input-placeholder,
+						select::placeholder {
+							color: $font!important;
+							opacity: 1!important;
+						}
+						.address_country {
+							flex-grow: 1;
+						}
+						select {
+							background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.74 15.3'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpolygon class='cls-1' points='11.87 0 23.74 0 17.81 7.65 11.87 15.3 5.94 7.65 0 0 11.87 0'/%3e%3c/svg%3e");
+							background-repeat: no-repeat, repeat;
+							background-position: right 15px top 50%, 0 0;
+							background-size: .65em auto, 100%;
+							&:focus {
+								background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.74 15.3'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpolygon class='cls-1' points='11.87 15.3 0 15.3 5.94 7.65 11.87 0 17.81 7.65 23.74 15.3 11.87 15.3'/%3e%3c/svg%3e");
+							}
+							&:valid {
+								color: $black;
+							}
+							&:invalid, .gf_placeholder {
+								color: $black!important;
+								opacity: 1;
+							}
+						}
+						.warningTextareaInfo {
+							color: $grey;
+						}
+						.gfield_description, .validation_message, .gfield_validation_message {
+							font-size: 13px;
+							padding: 0px 10px 0px 10px;
+							border-color: $red;
+							background: $red;
+							color: $white;
+							letter-spacing: .02rem;
+						}
+					}
+				}
+			}
+			input[type=submit] {
+				appearance: none;
+				-webkit-appearance: none;
+				color: $teal;
+				padding: .3em 1em !important;
+				font-size: 20px;
+				border-width: 3px !important;
+				border-color: #66cccb;
+				border-radius: 50px;
+				font-weight: 700;
+				font-style: normal;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 1px;
+				display: inline-block;
+				margin: 0 0 0 18px;
+				cursor: pointer;
+				line-height: 1.7em !important;
+				background-color: transparent;
+				background-size: cover;
+				background-position: 50%;
+				background-repeat: no-repeat;
+				transition-duration: .2s;
+				transition-property: all !important;
+				box-sizing: border-box;
+				font-family: 'Work Sans',Helvetica,Arial,Lucida,sans-serif;
+				&:hover {
+					color: $drkTeal !important;
+					border-color: $drkTeal !important;
+				}
+			}
+		}
 		@import 'footer';
 	}
 }
