@@ -364,6 +364,7 @@ GLOBAL
 				border-color: $red;
 				background: $red;
 				color: $white;
+				text-transform: uppercase;
 				margin: 0 0 20px 0;
 				border-radius: 200px;
 				> .gform_submission_error {
@@ -443,7 +444,7 @@ GLOBAL
 							}
 						}
 						.warningTextareaInfo {
-							color: $grey;
+							color: $font;
 						}
 						.gfield_description, .validation_message, .gfield_validation_message {
 							font-size: 13px;
