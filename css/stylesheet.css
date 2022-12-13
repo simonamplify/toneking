@@ -635,6 +635,7 @@ GLOBAL
   border-color: #c0392b;
   background: #c0392b;
   color: #ffffff;
+  text-transform: none;
   margin: 0 0 20px 0;
   border-radius: 200px;
 }
@@ -706,16 +707,17 @@ GLOBAL
   opacity: 1;
 }
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .warningTextareaInfo {
-  color: #eaeaea;
+  color: #595959;
 }
 #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .gfield_description, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .validation_message, #page-container #et-main-area .gform_wrapper .gform_body .gform_fields .gfield .gfield_validation_message {
   font-size: 13px;
-  padding: 0px 15px 0px 15px;
+  padding: 2px 15px 2px 15px;
   border-color: #c0392b;
   border-radius: 200px;
   background: #c0392b;
   color: #ffffff;
   letter-spacing: 0.02rem;
+  line-height: 1.3em;
 }
 #page-container #et-main-area .gform_wrapper input[type=submit] {
   -moz-appearance: none;
