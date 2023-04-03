@@ -256,10 +256,6 @@ GLOBAL
   color: #595959;
   font-style: normal;
 }
-#page-container header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input:-ms-input-placeholder {
-  color: #595959;
-  font-style: normal;
-}
 #page-container header .menuSearch .dgwt-wcas-search-form .dgwt-wcas-search-input::placeholder {
   color: #595959;
   font-style: normal;
@@ -333,22 +329,6 @@ GLOBAL
 #page-container #et-main-area #main-content #homepageBanner .bannerBlurb p {
   max-width: 480px;
   margin-top: 10px;
-}
-@-webkit-keyframes foregroundSlide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1500px 0;
-  }
-}
-@-webkit-keyframes backgroundSlide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -1500px 0;
-  }
 }
 @keyframes foregroundSlide {
   from {
@@ -848,9 +828,6 @@ GLOBAL
 .woocommerce-page #page-container #et-main-area #main-content #respond form .input.text::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input.title::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=email]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=password]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=tel]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=text]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form select::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form textarea::-moz-placeholder {
   color: #595959 !important;
 }
-.woocommerce-page #page-container #et-main-area #main-content #respond form .input.text:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input.title:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=email]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=password]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=tel]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=text]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form select:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form textarea:-ms-input-placeholder {
-  color: #595959 !important;
-}
 .woocommerce-page #page-container #et-main-area #main-content #respond form .input.text::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input.title::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=email]::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=password]::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=tel]::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form input[type=text]::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form select::placeholder, .woocommerce-page #page-container #et-main-area #main-content #respond form textarea::placeholder {
   color: #595959 !important;
 }
@@ -914,9 +891,6 @@ GLOBAL
 .woocommerce-page #page-container #et-main-area #main-content form .input.text::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input.title::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=email]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=password]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=tel]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=text]::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form select::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form textarea::-moz-placeholder {
   color: #595959;
 }
-.woocommerce-page #page-container #et-main-area #main-content form .input.text:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input.title:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=email]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=password]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=tel]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=text]:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form select:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form textarea:-ms-input-placeholder {
-  color: #595959;
-}
 .woocommerce-page #page-container #et-main-area #main-content form .input.text::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input.title::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=email]::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=password]::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=tel]::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=text]::placeholder, .woocommerce-page #page-container #et-main-area #main-content form select::placeholder, .woocommerce-page #page-container #et-main-area #main-content form textarea::placeholder {
   color: #595959;
 }
@@ -925,9 +899,6 @@ GLOBAL
   color: #000000;
 }
 .woocommerce-page #page-container #et-main-area #main-content form .input.text:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input.title:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=email]:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=password]:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=tel]:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=text]:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form select:focus::-moz-placeholder, .woocommerce-page #page-container #et-main-area #main-content form textarea:focus::-moz-placeholder {
-  color: #000000;
-}
-.woocommerce-page #page-container #et-main-area #main-content form .input.text:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input.title:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=email]:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=password]:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=tel]:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=text]:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form select:focus:-ms-input-placeholder, .woocommerce-page #page-container #et-main-area #main-content form textarea:focus:-ms-input-placeholder {
   color: #000000;
 }
 .woocommerce-page #page-container #et-main-area #main-content form .input.text:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input.title:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=email]:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=password]:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=tel]:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form input[type=text]:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form select:focus::placeholder, .woocommerce-page #page-container #et-main-area #main-content form textarea:focus::placeholder {
@@ -1186,6 +1157,20 @@ GLOBAL
 .woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout .woocommerce-checkout-payment .button {
   margin-top: 20px;
 }
+.woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout #order_notice {
+  background-color: #eaeaea;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout #order_notice strong {
+  color: #66cccb;
+}
+.woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout #order_notice p {
+  margin: 0;
+  padding: 0;
+}
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .woocommerce-cart-form__cart-item .product-remove a.remove {
   line-height: 1.1;
   border-radius: 50%;
@@ -1227,9 +1212,6 @@ GLOBAL
   transition: all 0.2s ease-in-out;
 }
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .actions .coupon #coupon_code::-moz-placeholder {
-  color: #595959;
-}
-.woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .actions .coupon #coupon_code:-ms-input-placeholder {
   color: #595959;
 }
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .actions .coupon #coupon_code::placeholder {
