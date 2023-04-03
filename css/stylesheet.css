@@ -1158,14 +1158,15 @@ GLOBAL
   margin-top: 20px;
 }
 .woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout #order_notice {
-  background-color: #eaeaea;
+  background-color: #fcfcfc;
+  border: 1px solid #eaeaea;
   padding: 10px;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.6em;
 }
 .woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout #order_notice strong {
-  color: #66cccb;
+  color: #000000;
 }
 .woocommerce-page.woocommerce-checkout #page-container #et-main-area #main-content .woocommerce .woocommerce-checkout #order_notice p {
   margin: 0;

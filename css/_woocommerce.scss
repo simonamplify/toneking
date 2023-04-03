@@ -431,13 +431,14 @@
                                 }
                             }
                             #order_notice {
-                                background-color: $grey;
+                                background-color: $bgGrey;
+                                border: 1px solid $grey;
                                 padding: 10px;
                                 margin-bottom: 30px;
                                 font-size: 14px;
                                 line-height: 1.6em;
                                 strong {
-                                    color: $teal;
+                                    color: $black;
                                 }
                                 p {
                                     margin: 0;
