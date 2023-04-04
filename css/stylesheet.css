@@ -776,6 +776,7 @@ GLOBAL
   left: 10px;
   min-width: unset;
   max-width: 400px;
+  border: solid 1px #595959;
 }
 @media (max-width: 767px) {
   #cookie-notice {

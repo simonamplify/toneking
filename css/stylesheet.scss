@@ -503,6 +503,7 @@ GLOBAL
 	left: 10px;
 	min-width: unset;
 	max-width: 400px;
+	border: solid 1px $font;
 	@media (max-width:767px) {
 		max-width: 80%;
 	}
