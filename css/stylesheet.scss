@@ -497,6 +497,49 @@ GLOBAL
 		@import 'footer';
 	}
 }
+#cookie-notice {
+	font-family: 'Rubik',Helvetica,Arial,Lucida,sans-serif;
+	bottom: 10px;
+	left: 10px;
+	min-width: unset;
+	max-width: 400px;
+	@media (max-width:767px) {
+		max-width: 80%;
+	}
+	.cookie-notice-container {
+		.cn-button, .cn-button:not(.cn-button-custom) {
+			border-radius: 0;
+			font-family: 'Work Sans',Helvetica,Arial,Lucida,sans-serif;
+			text-decoration: none;
+			font-style: normal;
+			letter-spacing: 1px;
+			font-weight: 700;
+			text-transform: uppercase;
+			transition: opacity .4s;
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+		#cn-close-notice {
+			margin-top: 0;
+			right: 5px;
+			top: 5px;
+			transition: opacity .4s;
+			opacity: .6;
+			&::after, &::before {
+				background-color: $white;
+			}
+			&:hover {
+				opacity: 1;
 
+			}
+		}
+		#cn-notice-text {
+			a {
+				text-decoration: none!important;
+			}
+		}
+	}
+}
 .grecaptcha-badge { visibility: hidden!important; }
 @import 'woocommerce';
