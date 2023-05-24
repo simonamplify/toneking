@@ -819,7 +819,7 @@ GLOBAL
 }
 .pum.pum-theme-content-only .pum-container .pum-close:hover {
   background-color: #eaeaea;
-  color: #66cccb;
+  color: #000000;
 }
 .pum.pum-theme-content-only .pum-container .pum-content .et_pb_newsletter_form .et_pb_newsletter_button .et_subscribe_loader::after {
   content: "Submitting...";
