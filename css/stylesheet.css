@@ -813,6 +813,15 @@ GLOBAL
   text-decoration: none !important;
 }
 
+/* POPUP MAKER */
+.pum.pum-theme-content-only .pum-container .pum-close {
+  transition: all 0.2s ease-in-out;
+}
+.pum.pum-theme-content-only .pum-container .pum-close:hover {
+  background-color: #eaeaea;
+  color: #66cccb;
+}
+
 .grecaptcha-badge {
   visibility: hidden !important;
 }

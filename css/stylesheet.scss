@@ -542,5 +542,19 @@ GLOBAL
 		}
 	}
 }
+/* POPUP MAKER */
+.pum {
+	&.pum-theme-content-only {
+		.pum-container {
+			.pum-close {
+				@include ease2();
+				&:hover {
+					background-color: $grey;
+					color: $teal;
+				}
+			}
+		}
+	}
+}
 .grecaptcha-badge { visibility: hidden!important; }
 @import 'woocommerce';
