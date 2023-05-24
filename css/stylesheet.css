@@ -821,6 +821,13 @@ GLOBAL
   background-color: #eaeaea;
   color: #66cccb;
 }
+.pum.pum-theme-content-only .pum-container .pum-content .et_pb_newsletter_form .et_pb_newsletter_button .et_subscribe_loader::after {
+  content: "Submitting...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .grecaptcha-badge {
   visibility: hidden !important;

@@ -553,6 +553,18 @@ GLOBAL
 					color: $teal;
 				}
 			}
+			.pum-content {
+				.et_pb_newsletter_form {
+					.et_pb_newsletter_button {
+						.et_subscribe_loader {
+							&::after {
+								content: "Submitting...";
+								@include absCenter();
+							}
+						}
+					}
+				}		
+			}
 		}
 	}
 }
