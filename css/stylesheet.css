@@ -326,6 +326,32 @@ GLOBAL
   GRAVITY FORMS
   =========================== */
 }
+@media all and (max-width: 980px) {
+  #page-container #et-main-area #main-content {
+    /* wrap row in a flex box */
+    /* custom classes that will designate the order of columns in the flex box row */
+    /* add margin to last column */
+  }
+  #page-container #et-main-area #main-content .custom_row {
+    display: flex; /* Safari 6.1+ */
+    flex-wrap: wrap;
+  }
+  #page-container #et-main-area #main-content .first-on-mobile {
+    order: 1;
+  }
+  #page-container #et-main-area #main-content .second-on-mobile {
+    order: 2;
+  }
+  #page-container #et-main-area #main-content .third-on-mobile {
+    order: 3;
+  }
+  #page-container #et-main-area #main-content .fourth-on-mobile {
+    order: 4;
+  }
+  #page-container #et-main-area #main-content .custom_row:last-child .et_pb_column:last-child {
+    margin-bottom: 30px;
+  }
+}
 #page-container #et-main-area #main-content #homepageBanner .bannerBlurb p {
   max-width: 480px;
   margin-top: 10px;
