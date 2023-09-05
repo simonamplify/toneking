@@ -859,6 +859,10 @@ GLOBAL
   visibility: hidden !important;
 }
 
+.mfp-wrap .mfp-container.mfp-image-holder .mfp-content .mfp-figure figure figcaption .mfp-bottom-bar .mfp-title {
+  display: none;
+}
+
 .woocommerce-page #page-container #et-main-area #main-content > .container {
   width: 90%;
 }
