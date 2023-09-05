@@ -123,7 +123,11 @@ GLOBAL
 					min-height: 400px!important;
 					@include ease2();
 					.et_pb_text {
-						@include absCenter();
+						position: absolute;
+						top: 40%;
+						top: calc(50% - 40px);
+						left: 50%;
+						transform: translate(-50%,0);
 						display: block;
 						p {
 							@include opacity0();
