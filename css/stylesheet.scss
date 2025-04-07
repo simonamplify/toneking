@@ -437,6 +437,11 @@ GLOBAL
                     }
                 }
             }
+            #features {
+                .et_pb_text ul > li:empty {
+                    padding-bottom: 1em;
+                }
+            }
             #artists {
                 .searchWrapper {
                     -webkit-border-radius: 200px;
