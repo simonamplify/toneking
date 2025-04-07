@@ -438,7 +438,7 @@ GLOBAL
                 }
             }
             #features {
-                .et_pb_text ul > li:empty {
+                .et_pb_text ul > li:not(:has(ul)) {
                     padding-bottom: 1em;
                 }
             }
