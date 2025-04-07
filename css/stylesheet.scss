@@ -270,6 +270,25 @@ GLOBAL
                         }
                     }
                 }
+                &.textTwoCol {
+                    .et_pb_text_inner {
+                        @media (min-width: 768px) {
+                            column-count: 2;
+                            column-gap: 5%;
+                            column-fill: balance;
+                            p,
+                            li {
+                                break-inside: avoid-column;
+                                text-wrap: pretty;
+                            }
+                            h1,
+                            h2,
+                            h3 {
+                                column-span: all;
+                            }
+                        }
+                    }
+                }
             }
             .productSlider {
                 .as-arrows-control {
@@ -433,6 +452,7 @@ GLOBAL
                         padding-left: 1.5em !important;
                         height: auto;
                         min-height: 0;
+                        appearance: none;
                         -webkit-appearance: none;
                         display: block;
                         margin: auto;
@@ -556,6 +576,7 @@ GLOBAL
                         textarea {
                             border-radius: 0px 0px 0px 0px;
                             overflow: hidden;
+                            appearance: none;
                             -webkit-appearance: none;
                             font-size: 16px;
                             padding-top: 1.5em;
