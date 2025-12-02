@@ -1,7 +1,9 @@
-
 ////////////////////////////////////////////
 // Woocommerce
 ////////////////////////////////////////////
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .woocommerce-page {
     #page-container {
         #et-main-area {
@@ -11,18 +13,20 @@
                     width: 90%;
                 }
                 // Buttons
-                input[type=submit], .button, .et_pb_button {
-                    font-size: 17px!important;
-                    border-radius: 50px!important;
-                    background-color: transparent!important;
-                    color: $teal!important;
+                input[type='submit'],
+                .button,
+                .et_pb_button {
+                    font-size: 17px !important;
+                    border-radius: 50px !important;
+                    background-color: transparent !important;
+                    color: $teal !important;
                     letter-spacing: 1px;
                     &:hover {
-                        color: $drkTeal!important;
+                        color: $drkTeal !important;
                     }
                 }
                 .onsale {
-                    padding: 5px 18px!important;
+                    padding: 5px 18px !important;
                     white-space: nowrap;
                 }
                 .pswp {
@@ -34,7 +38,7 @@
                     h2 {
                         text-transform: uppercase;
                         font-size: 24px;
-                        color: $black!important;
+                        color: $black !important;
                         letter-spacing: 4px;
                         line-height: 1.8em;
                         text-align: center;
@@ -45,7 +49,9 @@
                             .tableCell {
                                 line-height: 1.5em;
                                 font-size: 16px;
-                                p, ul, ol {
+                                p,
+                                ul,
+                                ol {
                                     padding-bottom: 0;
                                 }
                                 &:nth-child(1) {
@@ -60,39 +66,52 @@
                     }
                 }
                 table.shop_attributes {
-                    tr:nth-child(even)  {
+                    tr:nth-child(even) {
                         th {
                             background-color: $bgGrey;
                         }
                     }
-                } 
+                }
                 #respond {
                     form {
-                        .input.text, input.title, input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
+                        .input.text,
+                        input.title,
+                        input[type='email'],
+                        input[type='password'],
+                        input[type='tel'],
+                        input[type='text'],
+                        select,
+                        textarea {
                             @include ease2();
                             &::placeholder {
-                                color: $font!important;
+                                color: $font !important;
                             }
                         }
                     }
                 }
                 // Notifications
-                .woocommerce-message, .woocommerce-info {
-                    padding-left: 30px!important;
-                    padding-right: 30px!important;
+                .woocommerce-message,
+                .woocommerce-info {
+                    padding-left: 30px !important;
+                    padding-right: 30px !important;
                     border-radius: 15px;
-                    .button  {
+                    .button {
                         order: 2;
                         padding: 0.3em 1em !important;
-                        color: $white!important;
-                        @media (max-width:767px) {
+                        color: $white !important;
+                        @media (max-width: 767px) {
                             margin-top: 15px;
                         }
                         &:hover {
                             padding: 0.3em 1em !important;
-                            color: $white!important;
+                            color: $white !important;
                             opacity: 1;
-                            background-color: rgba(255,255,255,0.1)!important;
+                            background-color: rgba(
+                                255,
+                                255,
+                                255,
+                                0.1
+                            ) !important;
                         }
                     }
                     .showcoupon {
@@ -108,7 +127,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    @media (max-width:767px) {
+                    @media (max-width: 767px) {
                         flex-direction: column;
                         flex-wrap: nowrap;
                     }
@@ -121,13 +140,20 @@
                             color: $red;
                         }
                     }
-                    .input.text, input.title, input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
+                    .input.text,
+                    input.title,
+                    input[type='email'],
+                    input[type='password'],
+                    input[type='tel'],
+                    input[type='text'],
+                    select,
+                    textarea {
                         font-size: 18px;
                         border-radius: 0;
                         border-color: $grey;
                         color: $black;
                         @include ease2();
-                        letter-spacing: .02rem;
+                        letter-spacing: 0.02rem;
                         font-weight: 500;
                         &::placeholder {
                             color: $font;
@@ -157,7 +183,8 @@
                                     height: 60px;
                                     width: 35px;
                                     b {
-                                        border-color: $font transparent transparent transparent;
+                                        border-color: $font transparent
+                                            transparent transparent;
                                         border-width: 5px 4px 0 4px;
                                     }
                                 }
@@ -168,8 +195,9 @@
                                 .select2-selection {
                                     .select2-selection__arrow {
                                         b {
-                                            border-color: transparent transparent $font transparent;
-                                            border-width: 0 4px 5px 4px;   
+                                            border-color: transparent
+                                                transparent $font transparent;
+                                            border-width: 0 4px 5px 4px;
                                         }
                                     }
                                 }
@@ -183,13 +211,13 @@
                         height: 44px;
                         border-radius: 0;
                         padding: 0;
-                        line-height:44px;
-                        border: solid 1px $grey!important;
-                        color: $font!important;
-                        font-size: 18px!important;
-                        background-color: $white!important;
+                        line-height: 44px;
+                        border: solid 1px $grey !important;
+                        color: $font !important;
+                        font-size: 18px !important;
+                        background-color: $white !important;
                         &:focus {
-                            color: $white!important;
+                            color: $white !important;
                         }
                     }
                 }
@@ -197,6 +225,7 @@
                 input[type='radio'] {
                     -webkit-appearance: none;
                     -moz-appearance: none;
+                    appearance: none;
                     height: 34px;
                     outline: none;
                     display: inline-block;
@@ -206,26 +235,28 @@
                     cursor: pointer;
                     border: 1px solid $grey;
                     background: $white;
-                    transition: background .3s, border-color .3s;
+                    transition: background 0.3s, border-color 0.3s;
                     &::after {
                         content: '';
                         display: block;
                         left: 0;
                         top: 0;
                         position: absolute;
-                        transition: transform .3s ease, opacity .2s;
+                        transition: transform 0.3s ease, opacity 0.2s;
                     }
                     &:checked {
                         background: $black;
                         border-color: $black;
                         &::after {
-                            transition: transform .6s cubic-bezier(.2, .85, .32, 1.2), opacity .3s;
+                            transition: transform 0.6s
+                                    cubic-bezier(0.2, 0.85, 0.32, 1.2),
+                                opacity 0.3s;
                         }
                     }
                     &:disabled {
                         background: $grey;
                         cursor: not-allowed;
-                        opacity: .9;
+                        opacity: 0.9;
                         &:checked {
                             background: #c4d0dc;
                             border-color: $grey;
@@ -246,7 +277,7 @@
                         border-color: $black;
                     }
                     &:not(.switch) {
-                        width: 34px;
+                        width: 34px !important;
                         &::after {
                             opacity: 0;
                         }
@@ -307,7 +338,7 @@
                         &:disabled {
                             &:not(:checked) {
                                 &::after {
-                                    opacity: .6;
+                                    opacity: 0.6;
                                 }
                             }
                         }
@@ -324,11 +355,11 @@
                         border-radius: 50%;
                         background: $white;
                         opacity: 0;
-                        transform: scale(.7);
+                        transform: scale(0.7);
                     }
                     &:checked {
                         &::after {
-                            transform: scale(.5);
+                            transform: scale(0.5);
                         }
                     }
                 }
@@ -336,18 +367,23 @@
                 table {
                     border-color: #ebebeb;
                     border-radius: 0;
-                    thead, tbody, td, th, tr, tfoot {
-                        border-color: #ebebeb!important;
+                    thead,
+                    tbody,
+                    td,
+                    th,
+                    tr,
+                    tfoot {
+                        border-color: #ebebeb !important;
                     }
                 }
                 .order-total {
                     color: $black;
                 }
-            }   
+            }
         }
     }
     // Checkout page overrides
-    &.woocommerce-checkout  {
+    &.woocommerce-checkout {
         #page-container {
             #et-main-area {
                 #main-content {
@@ -363,7 +399,7 @@
                             }
                             .form-row-last {
                                 float: left;
-                                @media (min-width:768px) {
+                                @media (min-width: 768px) {
                                     margin-left: 20px;
                                 }
                             }
@@ -374,9 +410,6 @@
                         .woocommerce-checkout {
                             #customer_details {
                                 margin-bottom: 30px;
-                            }
-                            .woocommerce-checkout-review-order-table {
-                                
                             }
                             .woocommerce-checkout-payment {
                                 border: none;
@@ -420,7 +453,7 @@
                                         &:disabled {
                                             &:not(:checked) {
                                                 &::after {
-                                                    opacity: .6;
+                                                    opacity: 0.6;
                                                 }
                                             }
                                         }
@@ -452,7 +485,7 @@
         }
     }
     // Cart page overrides
-    &.woocommerce-cart  {
+    &.woocommerce-cart {
         #page-container {
             #et-main-area {
                 #main-content {
@@ -464,14 +497,14 @@
                                         a.remove {
                                             line-height: 1.1;
                                             border-radius: 50%;
-                                            color: $teal!important;
+                                            color: $teal !important;
                                             font-size: 1.4em;
                                             height: 1.1em;
                                             width: 1.1em;
                                             @include ease2();
                                             &:hover {
                                                 background: $teal;
-                                                color: $white!important
+                                                color: $white !important;
                                             }
                                         }
                                     }
@@ -482,13 +515,13 @@
                                         height: 44px;
                                         border-radius: 0;
                                         padding: 0;
-                                        line-height:44px;
-                                        border: solid 1px $grey!important;
-                                        color: $font!important;
-                                        font-size: 18px!important;
-                                        background-color: $white!important;
+                                        line-height: 44px;
+                                        border: solid 1px $grey !important;
+                                        color: $font !important;
+                                        font-size: 18px !important;
+                                        background-color: $white !important;
                                         &:focus {
-                                            color: $black!important;
+                                            color: $black !important;
                                         }
                                     }
                                 }
@@ -500,33 +533,34 @@
                                             padding: 6px 15px;
                                             margin-right: 10px;
                                             border-radius: 0;
-                                            font-weight: 400!important;
-                                            font-size: 18px!important;
-                                            background-color: $bgGrey!important;
-                                            border: 1px solid $bgGrey!important;
-                                            color: $black!important;
+                                            font-weight: 400 !important;
+                                            font-size: 18px !important;
+                                            background-color: $bgGrey !important;
+                                            border: 1px solid $bgGrey !important;
+                                            color: $black !important;
                                             @include ease2();
                                             &::placeholder {
                                                 color: $font;
                                             }
-                                            @media (max-width:768px) {
-                                                background-color: $white!important;
+                                            @media (max-width: 768px) {
+                                                background-color: $white !important;
                                                 border: solid 1px #ebebeb;
                                                 width: 100%;
                                                 margin-bottom: 10px;
                                             }
                                             &:focus {
-                                                border-color: $teal!important;
+                                                border-color: $teal !important;
                                             }
                                         }
-                                        
-                                        @media (max-width:768px) {
+
+                                        @media (max-width: 768px) {
                                             .button {
                                                 width: 100%;
                                             }
                                         }
                                     }
-                                    .button:disabled, .button:disabled[disabled] {
+                                    .button:disabled,
+                                    .button:disabled[disabled] {
                                         padding: 0.3em 1em !important;
                                         background-color: $teal;
                                         border-color: $teal;
@@ -564,8 +598,8 @@
                                     }
                                 }
                                 .woocommerce-form__label-for-checkbox {
-                                    line-height: 34px!important;
-                                    margin-top: 33px!important;
+                                    line-height: 34px !important;
+                                    margin-top: 33px !important;
                                 }
                             }
                             .button {
@@ -577,7 +611,7 @@
                                 list-style-type: none;
                                 padding: 0;
                                 line-height: 1.8em;
-                                @media (max-width:768px) {
+                                @media (max-width: 768px) {
                                     padding-bottom: 40px;
                                 }
                                 li {
@@ -586,7 +620,8 @@
                                         margin-bottom: 0;
                                     }
                                     a {
-                                        font-family: 'Rubik',Helvetica,Arial,Lucida,sans-serif;
+                                        font-family: 'Rubik', Helvetica, Arial,
+                                            Lucida, sans-serif;
                                         text-transform: uppercase;
                                         font-size: 16px;
                                         color: $black;
@@ -635,11 +670,12 @@
             #et-main-area {
                 #main-content {
                     .woocommerce-product-gallery {
-                        .flex-viewport, .flex-control-thumbs li {
+                        .flex-viewport,
+                        .flex-control-thumbs li {
                             border: solid 1px #f2f2f2;
                         }
                     }
-                    .et_pb_text { 
+                    .et_pb_text {
                         &.et_pb_bg_layout_dark {
                             strong {
                                 color: $white;
@@ -685,15 +721,15 @@
                                 }
                                 tbody {
                                     label {
-                                        padding-right: 10px; 
+                                        padding-right: 10px;
                                         line-height: 2.6em;
                                     }
                                     .value {
                                         padding-bottom: 0;
                                         line-height: 1em;
-                                        padding-bottom: 0!important;
-                                        > span {   
-                                            &::after { 
+                                        padding-bottom: 0 !important;
+                                        > span {
+                                            &::after {
                                                 display: none;
                                             }
                                         }
@@ -705,7 +741,10 @@
                                             margin-top: 0;
                                             @media (max-width: 767px) {
                                                 bottom: unset;
-                                                transform: translate(100%, -50%);
+                                                transform: translate(
+                                                    100%,
+                                                    -50%
+                                                );
                                                 top: 50%;
                                                 right: -10px;
                                                 margin-top: 0;
@@ -716,19 +755,19 @@
                             }
                             select {
                                 display: block;
-                                font-size: 17px!important;
-                                color: $font!important;
+                                font-size: 17px !important;
+                                color: $font !important;
                                 line-height: 2em;
                                 padding: 3px 33px 3px 15px;
                                 width: 100%;
                                 max-width: 300px;
                                 -webkit-box-sizing: border-box;
-                                    box-sizing: border-box;
+                                box-sizing: border-box;
                                 margin: 0 auto;
                                 border: 2px solid $grey;
-                                border-radius: 100px!important;
+                                border-radius: 100px !important;
                                 -webkit-box-shadow: none;
-                                    box-shadow: none;
+                                box-shadow: none;
                                 -moz-appearance: none;
                                 -webkit-appearance: none;
                                 appearance: none;
@@ -737,7 +776,7 @@
                                 background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.09 39.24'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M55.7,3.47,38.38,20.13a6.25,6.25,0,0,1-8.67,0L12.4,3.47,10.6,1.75A6.25,6.25,0,0,0,6.27,0h0A6.25,6.25,0,0,0,1.93,10.76L12.4,20.83,29.71,37.49a6.25,6.25,0,0,0,8.67,0L55.7,20.83,66.16,10.76A6.25,6.25,0,0,0,61.83,0h0a6.27,6.27,0,0,0-4.34,1.75Z'/%3e%3c/svg%3e");
                                 background-repeat: no-repeat, repeat;
                                 background-position: right 15px top 50%, 0 0;
-                                background-size: .65em auto, 100%;
+                                background-size: 0.65em auto, 100%;
                             }
                             select::-ms-expand {
                                 display: none;
@@ -746,7 +785,8 @@
                                 border-color: $teal;
                                 color: $black;
                             }
-                            select:focus, select:active {
+                            select:focus,
+                            select:active {
                                 border-color: $teal;
                                 box-shadow: none;
                                 box-shadow: none -moz-mac-focusring;
@@ -757,13 +797,15 @@
                             select option {
                                 font-size: 16px;
                             }
-                            select:disabled, select[aria-disabled=true] {
+                            select:disabled,
+                            select[aria-disabled='true'] {
                                 opacity: 0.5;
                             }
-                            select:disabled:hover, select[aria-disabled=true]:hover {
+                            select:disabled:hover,
+                            select[aria-disabled='true']:hover {
                                 opacity: 0.5;
                             }
-                            *[dir="rtl"] select {
+                            *[dir='rtl'] select {
                                 background-position: left 15px top 50%, 0 0;
                                 padding: 10px 20px 10px 33px;
                             }
@@ -772,7 +814,6 @@
                                 flex-grow: 0;
                                 flex-shrink: 1;
                                 display: flex;
-                                
                             }
                         }
                     }
@@ -784,9 +825,9 @@
     .et_pb_widget_area {
         &.shopBar {
             .widget_nav_menu {
-                margin: 0!important;
-                width: 100%!important;
-                float: none!important;
+                margin: 0 !important;
+                width: 100% !important;
+                float: none !important;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
@@ -794,10 +835,10 @@
                 justify-content: flex-start;
                 align-items: flex-start;
                 .widgettitle {
-                    font-weight: bold!important;
-                    text-transform: uppercase!important;
-                    font-size: 20px!important;
-                    letter-spacing: 1px!important;
+                    font-weight: bold !important;
+                    text-transform: uppercase !important;
+                    font-size: 20px !important;
+                    letter-spacing: 1px !important;
                 }
                 .menu-product-category-menu-container {
                     #menu-product-category-menu {
@@ -810,25 +851,26 @@
                         .menu-item {
                             margin: 10px 10px 0 0;
                             position: relative;
-                            @media (max-width:767px) {
+                            @media (max-width: 767px) {
                                 margin: 5px 5px 0 0;
                             }
                             a {
                                 position: relative;
                                 display: block;
                                 padding: 0 15px;
-                                transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+                                transition: color 0.4s ease-in-out,
+                                    background-color 0.4s ease-in-out;
                                 border: solid 2px $teal;
                                 border-radius: 100px;
                                 color: $teal;
                                 font-size: 16px;
                                 line-height: 1.8em;
-                                font-weight: 400;                       
+                                font-weight: 400;
                                 &:hover {
                                     background-color: $teal;
                                     color: $white;
                                 }
-                                @media (max-width:767px) {
+                                @media (max-width: 767px) {
                                     font-size: 14px;
                                     line-height: 1.7em;
                                     border: solid 1px $teal;
@@ -842,7 +884,7 @@
                             }
                             &:last-child {
                                 margin: 10px 0 0 0;
-                                @media (max-width:767px) {
+                                @media (max-width: 767px) {
                                     margin: 5px 0 0 0;
                                 }
                             }
@@ -863,22 +905,22 @@
                         + p {
                             display: none;
                         }
-                    } 
+                    }
                     .woocommerce {
                         .woocommerce-result-count {
                             color: $font;
                         }
-                        .products  {
+                        .products {
                             padding-top: 10px;
-                            .product  {
-                                @media (max-width:767px) {
-                                    width: 100%!important;
-                                    margin-right: 0!important;
+                            .product {
+                                @media (max-width: 767px) {
+                                    width: 100% !important;
+                                    margin-right: 0 !important;
                                 }
                                 .button {
-                                    font-size: 14px!important;
-                                    margin-top: 20px!important;
-                                    margin-right: 10px!important;
+                                    font-size: 14px !important;
+                                    margin-top: 20px !important;
+                                    margin-right: 10px !important;
                                 }
                                 &.outofstock {
                                     .button {
@@ -889,19 +931,19 @@
                         }
                         select {
                             display: block;
-                            font-size: 14px!important;
-                            color: $font!important;
+                            font-size: 14px !important;
+                            color: $font !important;
                             line-height: 1.8em;
                             padding: 3px 33px 3px 15px;
                             width: 100%;
                             max-width: 300px;
                             -webkit-box-sizing: border-box;
-                                box-sizing: border-box;
+                            box-sizing: border-box;
                             margin: 0 auto;
                             border: 1px solid $grey;
-                            border-radius: 100px!important;
+                            border-radius: 100px !important;
                             -webkit-box-shadow: none;
-                                box-shadow: none;
+                            box-shadow: none;
                             -moz-appearance: none;
                             -webkit-appearance: none;
                             appearance: none;
@@ -910,7 +952,7 @@
                             background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.09 39.24'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M55.7,3.47,38.38,20.13a6.25,6.25,0,0,1-8.67,0L12.4,3.47,10.6,1.75A6.25,6.25,0,0,0,6.27,0h0A6.25,6.25,0,0,0,1.93,10.76L12.4,20.83,29.71,37.49a6.25,6.25,0,0,0,8.67,0L55.7,20.83,66.16,10.76A6.25,6.25,0,0,0,61.83,0h0a6.27,6.27,0,0,0-4.34,1.75Z'/%3e%3c/svg%3e");
                             background-repeat: no-repeat, repeat;
                             background-position: right 15px top 50%, 0 0;
-                            background-size: .65em auto, 100%;
+                            background-size: 0.65em auto, 100%;
                         }
                         select::-ms-expand {
                             display: none;
@@ -919,7 +961,8 @@
                             border-color: $teal;
                             color: $black;
                         }
-                        select:focus, select:active {
+                        select:focus,
+                        select:active {
                             border-color: $teal;
                             box-shadow: none;
                             box-shadow: none -moz-mac-focusring;
@@ -930,13 +973,15 @@
                         select option {
                             font-size: 16px;
                         }
-                        select:disabled, select[aria-disabled=true] {
+                        select:disabled,
+                        select[aria-disabled='true'] {
                             opacity: 0.5;
                         }
-                        select:disabled:hover, select[aria-disabled=true]:hover {
+                        select:disabled:hover,
+                        select[aria-disabled='true']:hover {
                             opacity: 0.5;
                         }
-                        *[dir="rtl"] select {
+                        *[dir='rtl'] select {
                             background-position: left 15px top 50%, 0 0;
                             padding: 10px 20px 10px 33px;
                         }
@@ -949,14 +994,14 @@
 
 .select2-container {
     .select2-dropdown {
-        border-radius: 0!important;
-        border-color: $grey!important;
+        border-radius: 0 !important;
+        border-color: $grey !important;
         .select2-search {
             padding: 4px 15px 10px 15px;
             .select2-search__field {
-                border-color: $grey!important;
-                line-height: 1.8em!important;
-                padding: 5px 10px!important;
+                border-color: $grey !important;
+                line-height: 1.8em !important;
+                padding: 5px 10px !important;
             }
         }
         .select2-results {
@@ -970,7 +1015,7 @@
                 .select2-results__option {
                     padding: 6px 15px;
                     &.select2-results__option--highlighted {
-                        background-color: $teal!important;
+                        background-color: $teal !important;
                     }
                 }
             }
@@ -988,20 +1033,20 @@
             }
         }
         .xoo-wsc-basket {
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .button {
-            font-size: 17px!important;
-            border-radius: 50px!important;
-            background-color: transparent!important;
-            color: $teal!important;
-            letter-spacing: 1px!important;
-            text-transform: uppercase!important;
-            padding: .3em 1em !important;
-            font-weight: 700!important;
-            border: 3px solid!important;
+            font-size: 17px !important;
+            border-radius: 50px !important;
+            background-color: transparent !important;
+            color: $teal !important;
+            letter-spacing: 1px !important;
+            text-transform: uppercase !important;
+            padding: 0.3em 1em !important;
+            font-weight: 700 !important;
+            border: 3px solid !important;
             &:hover {
-                color: $drkTeal!important;
+                color: $drkTeal !important;
             }
         }
     }

@@ -1,38 +1,46 @@
 ////////////////////////////////////////////
 // Header
 ////////////////////////////////////////////
-#main-footer {
-    position: relative;
-    border-top: 3px solid $teal;
-    padding-top: 100px; 
-    z-index: 1;
-    &::before {
-        background: url('/wp-content/uploads/2019/09/sound-bar.svg') repeat-x;
-        background-size: 840px 200px;
-        display: block;
-        content: "";
-        height: 200px;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        margin-top: -101px;
-        @include horCenter();
-    }
-    .container {
-        #footer-widgets {
-            .footer-widget {
-                .fwidget {
-                    &.widget_nav_menu {
-                        ul.menu {
-                            .menu-item {
-                                padding-left: 0;
-                                &::before {
-                                    content: none;
-                                }
-                                a {
-                                    @include ease2();
-                                    &:hover {
-                                        color: $white;
+@use 'variables' as *;
+@use 'mixins' as *;
+
+#page-container {
+    #et-main-area {
+        #main-footer {
+            position: relative;
+            border-top: 3px solid $teal;
+            padding-top: 100px;
+            z-index: 1;
+            &::before {
+                background: url('/wp-content/uploads/2019/09/sound-bar.svg')
+                    repeat-x;
+                background-size: 840px 200px;
+                display: block;
+                content: '';
+                height: 200px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                margin-top: -101px;
+                @include horCenter();
+            }
+            .container {
+                #footer-widgets {
+                    .footer-widget {
+                        .fwidget {
+                            &.widget_nav_menu {
+                                ul.menu {
+                                    .menu-item {
+                                        padding-left: 0;
+                                        &::before {
+                                            content: none;
+                                        }
+                                        a {
+                                            @include ease2();
+                                            &:hover {
+                                                color: $white;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -40,9 +48,9 @@
                     }
                 }
             }
+            #footer-bottom {
+                border-top: 1px #292929 solid;
+            }
         }
-    }
-    #footer-bottom {
-        border-top: 1px #292929 solid;
     }
 }

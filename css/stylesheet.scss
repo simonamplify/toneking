@@ -1,12 +1,17 @@
 ////////////////////////////////////////////
-// Variables & mixins
+// INCLUDES
 ////////////////////////////////////////////
-@import 'variables';
-@import 'mixins';
 
-/* ===========================
-GLOBAL
-=========================== */
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'header';
+@use 'footer';
+@use 'woocommerce';
+
+////////////////////////////////////////////
+// STYLES
+////////////////////////////////////////////
+
 ::-moz-selection {
     color: $white;
     background: $teal;
@@ -29,7 +34,6 @@ GLOBAL
     }
 }
 #page-container {
-    @import 'header';
     #et-main-area {
         #main-content {
             @media all and (max-width: 980px) {
@@ -545,9 +549,7 @@ GLOBAL
 			border-radius: 0;
 			right: 3px;
 		}*/
-        /* ===========================
-		GRAVITY FORMS
-		=========================== */
+        /* GRAVITY FORMS */
         .gform_wrapper {
             .gfield_required {
                 color: $white;
@@ -696,7 +698,6 @@ GLOBAL
                 }
             }
         }
-        @import 'footer';
     }
 }
 #cookie-notice {
@@ -794,4 +795,3 @@ GLOBAL
         }
     }
 }
-@import 'woocommerce';
