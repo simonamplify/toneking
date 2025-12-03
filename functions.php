@@ -9,16 +9,16 @@ function custom_theme_scripts() {
         filemtime( get_stylesheet_directory() . '/css/stylesheet.css' )
     );
     wp_enqueue_script(
-        'list-js',
-        get_stylesheet_directory_uri() . '/js/lib/list.min.js',
+        'list',
+        get_stylesheet_directory_uri() . '/js/list.js',
         null,
         null,
         true
     );
     wp_enqueue_script(
-        'main-js',
+        'main',
         get_stylesheet_directory_uri() . '/js/main.min.js',
-        array('list-js'),
+        array('list'),
         filemtime( get_stylesheet_directory() . '/js/main.min.js' ),
         true
     );
