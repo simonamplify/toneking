@@ -7,6 +7,7 @@
 @use 'header';
 @use 'footer';
 @use 'woocommerce';
+@use 'wbte-ewb';
 
 ////////////////////////////////////////////
 // STYLES
@@ -191,8 +192,8 @@
                         font-weight: 400;
                         border-width: 0;
                         margin: 0;
-                        font-family: 'Rubik', Helvetica, Arial, Lucida,
-                            sans-serif;
+                        font-family:
+                            'Rubik', Helvetica, Arial, Lucida, sans-serif;
                         margin-bottom: 10px;
                         &:focus {
                             color: $black;
@@ -319,11 +320,17 @@
                     .as-prev {
                         .et_pb_button {
                             padding-left: 0.4em !important;
+                            &::after {
+                                content: '\34';
+                            }
                         }
                     }
                     .as-next {
                         .et_pb_button {
                             padding-left: 0.4em !important;
+                            &::after {
+                                content: '\35';
+                            }
                         }
                     }
                     @media (max-width: 980px) {
@@ -359,11 +366,13 @@
                                             font-size: 2rem;
                                             @include absCenter();
                                             margin: 0;
-                                            transition: color 0.1s linear,
+                                            transition:
+                                                color 0.1s linear,
                                                 opacity 0.1s linear !important;
                                             &::before {
                                                 content: '\45';
-                                                transition: color 0.1s linear,
+                                                transition:
+                                                    color 0.1s linear,
                                                     opacity 0.1s linear;
                                             }
                                         }
@@ -590,8 +599,8 @@
                             padding-right: 1.8em;
                             padding-bottom: 1.5em;
                             padding-left: 1.8em;
-                            font-family: 'Rubik', Helvetica, Arial, Lucida,
-                                sans-serif;
+                            font-family:
+                                'Rubik', Helvetica, Arial, Lucida, sans-serif;
                             line-height: 1.7em;
                             color: $black;
                             background-color: $white;
@@ -631,8 +640,12 @@
                         select {
                             background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.74 15.3'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpolygon class='cls-1' points='11.87 0 23.74 0 17.81 7.65 11.87 15.3 5.94 7.65 0 0 11.87 0'/%3e%3c/svg%3e");
                             background-repeat: no-repeat, repeat;
-                            background-position: right 1.8em top 50%, 0 0;
-                            background-size: 0.65em auto, 100%;
+                            background-position:
+                                right 1.8em top 50%,
+                                0 0;
+                            background-size:
+                                0.65em auto,
+                                100%;
                             &:focus {
                                 background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.74 15.3'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23c6c6c6;%7d%3c/style%3e%3c/defs%3e%3cpolygon class='cls-1' points='11.87 15.3 0 15.3 5.94 7.65 11.87 0 17.81 7.65 23.74 15.3 11.87 15.3'/%3e%3c/svg%3e");
                             }

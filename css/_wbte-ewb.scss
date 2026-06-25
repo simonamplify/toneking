@@ -1,0 +1,53 @@
+////////////////////////////////////////////
+// Withdrawal Form Styles
+////////////////////////////////////////////
+
+@use 'variables' as *;
+
+.wbte-ewb-form {
+    background-color: #fafafa;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    border-radius: 1.3rem;
+    .form-row {
+        padding-bottom: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .wbte-ewb-btn {
+        color: #ffffff !important;
+        border: solid 3px $teal !important;
+        border-radius: 100px;
+        letter-spacing: 1px;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        background-color: $teal;
+        padding: 0.3em 1em !important;
+        line-height: 1.7em !important;
+        font-size: 20px;
+        transition: all 0.2s;
+        &:hover {
+            border-color: $teal !important;
+            color: $teal !important;
+            background-color: transparent;
+        }
+    }
+    .form-row .input-text:not(textarea),
+    .form-row select {
+        border-radius: 999px;
+    }
+    .form-row textarea {
+        border-radius: 1rem !important;
+    }
+    .form-row .input-text:focus,
+    .form-row select:focus,
+    .form-row textarea:focus {
+        box-shadow: 0 0 0 2px $teal;
+    }
+    .wbte-ewb-form-description {
+        line-height: 1.3em;
+    }
+}
