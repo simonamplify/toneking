@@ -46,6 +46,7 @@
     .form-row select:focus,
     .form-row textarea:focus {
         box-shadow: 0 0 0 2px $teal;
+        border-color: #d1d5db;
     }
     .wbte-ewb-form-description {
         line-height: 1.3em;
