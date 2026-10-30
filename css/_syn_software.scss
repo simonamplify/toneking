@@ -1,0 +1,49 @@
+////////////////////////////////////////////
+// Synergy Software Download Styles
+////////////////////////////////////////////
+
+@use 'variables' as *;
+
+.synDownload {
+    &.et_pb_column {
+        display: flex;
+        gap: 15px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        .et_pb_image {
+            width: 32px;
+            flex-shrink: 0;
+        }
+        .et_pb_code {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    }
+    h4 {
+        font-size: 19px !important;
+        padding-bottom: 0;
+        transition: color 300ms ease 0ms;
+        &:hover {
+            color: $teal !important;
+        }
+    }
+    &.et_pb_code {
+        .et_pb_code_inner {
+            display: flex;
+            gap: 15px;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        > * {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        a:has(> img) {
+            flex-shrink: 0;
+        }
+        img {
+            width: 32px;
+            flex-shrink: 0;
+        }
+    }
+}
